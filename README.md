@@ -1,4 +1,4 @@
-```markdown
+
 # Práctica 1: Contador de 6 Bits y Caminata de LEDs con PIC16F887
 
 ## Descripción
