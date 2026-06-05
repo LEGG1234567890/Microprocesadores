@@ -18,14 +18,10 @@ En esta práctica se implementaron dos aplicaciones utilizando el microcontrolad
 
 # Contador de 6 Bits
 
-## Objetivo
-
-Implementar un contador binario de 6 bits utilizando LEDs para visualizar el conteo en formato binario.
 
 ## Descripción
 
-En esta sección de la práctica se desarrolló un contador de 6 bits que permite representar números binarios mediante el encendido y apagado secuencial de LEDs. Esta actividad permitió comprender el funcionamiento de las salidas digitales del microcontrolador y la representación binaria de valores numéricos.
-
+En esta sección de la práctica se desarrolló un contador de 6 bits que permite representar números binarios mediante el encendido y apagado secuencial de LEDs. Esta actividad permitió comprender el funcionamiento de las salidas digitales del microcontrolador.
 ## Simulación
 
 Antes de realizar la implementación física, se utilizó Proteus para diseñar y verificar el funcionamiento del circuito. La simulación permitió validar las conexiones y el comportamiento esperado del sistema.
@@ -57,9 +53,6 @@ Una vez programado el microcontrolador y ensamblado el circuito, se obtuvo el fu
 
 # Caminata de LEDs
 
-## Objetivo
-
-Implementar una secuencia de caminata de LEDs para comprender el control individual de salidas digitales mediante programación.
 
 ## Descripción
 
