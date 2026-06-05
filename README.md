@@ -7,7 +7,7 @@ En esta práctica se implementaron dos aplicaciones utilizando el microcontrolad
 | Cantidad | Componente |
 |-----------|------------|
 | 8 | LEDs |
-| 8 | Resistencias de 330 Ω |
+| 8 | Resistencias de 330 \Omega |
 | 1 | PIC16F887 |
 | 1 | Push Button |
 | 1 | Cristal de cuarzo de 8 MHz |
@@ -35,7 +35,7 @@ Antes de realizar la implementación física, se utilizó Proteus para diseñar 
 La programación del PIC16F887 se realizó utilizando MPLAB. El código desarrollado controla el incremento del contador y la visualización de los estados binarios mediante los LEDs.
 
 **Código en MPLAB:**  
-[Ver código](./Practica1/contador.c)
+[Ver código](./Practica1/Contador.c)
 
 ## Resultado
 
@@ -75,4 +75,4 @@ Después de cargar el programa en el PIC16F887 y realizar las conexiones corresp
 
 ### Resultado físico
 
-![Resultado caminata de LEDs](./Practica1/caminata.jpeg)
+![Resultado caminata de LEDs](./Practica1/Caminata.jpeg)
