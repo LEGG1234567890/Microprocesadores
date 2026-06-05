@@ -17,10 +17,10 @@ En esta práctica se implementaron dos aplicaciones utilizando el microcontrolad
 
 # Contador de 6 Bits
 
-
 ## Descripción
 
 En esta sección de la práctica se desarrolló un contador de 6 bits que permite representar números binarios mediante el encendido y apagado secuencial de LEDs. Esta actividad permitió comprender el funcionamiento de las salidas digitales del microcontrolador.
+
 ## Simulación
 
 Antes de realizar la implementación física, se utilizó Proteus para diseñar y verificar el funcionamiento del circuito. La simulación permitió validar las conexiones y el comportamiento esperado del sistema.
@@ -30,15 +30,12 @@ Antes de realizar la implementación física, se utilizó Proteus para diseñar 
 **Archivo de simulación:**  
 [Descargar simulación](./Practica1/base_micro.pdsprj)
 
-
 ## Programación
 
 La programación del PIC16F887 se realizó utilizando MPLAB. El código desarrollado controla el incremento del contador y la visualización de los estados binarios mediante los LEDs.
 
-### Código fuente
-
 **Código en MPLAB:**  
-[Ver código](/Practica1/contador.c)
+[Ver código](./Practica1/contador.c)
 
 ## Resultado
 
@@ -46,12 +43,11 @@ Una vez programado el microcontrolador y ensamblado el circuito, se obtuvo el fu
 
 ### Resultado físico
 
-![Resultado contador de 6 bits](/Practica1/Contador.jpg)
+![Resultado contador de 6 bits](./Practica1/Contador.jpeg)
 
 ---
 
 # Caminata de LEDs
-
 
 ## Descripción
 
@@ -64,17 +60,14 @@ Al igual que en la actividad anterior, se empleó Proteus para verificar el corr
 ### Simulación en Proteus
 
 **Archivo de simulación:**  
-[Descargar simulación](/Practica1/base_micro.pdsprj)
-
+[Descargar simulación](./Practica1/base_micro.pdsprj)
 
 ## Programación
 
 La programación se realizó en MPLAB utilizando lenguaje C para controlar la secuencia de encendido y apagado de los LEDs.
 
-### Código fuente
-
  **Código en MPLAB:**  
-[Ver código](/Practica1/Caminata.c)
+[Ver código](./Practica1/Caminata.c)
 
 ## Resultado
 
@@ -82,7 +75,4 @@ Después de cargar el programa en el PIC16F887 y realizar las conexiones corresp
 
 ### Resultado físico
 
-![Resultado caminata de LEDs](/Practica1/caminata.jpg)
-
-
-
+![Resultado caminata de LEDs](./Practica1/caminata.jpeg)
