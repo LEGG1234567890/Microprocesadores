@@ -1,4 +1,3 @@
-
 # Práctica 1: Contador de 6 Bits y Caminata de LEDs con PIC16F887
 
 ## Descripción
@@ -29,7 +28,7 @@ Antes de realizar la implementación física, se utilizó Proteus para diseñar 
 ### Simulación en Proteus
 
 **Archivo de simulación:**  
-[Descargar simulación](./practica1/base_micro.pdsprj)
+[Descargar simulación](./Practica1/base_micro.pdsprj)
 
 
 ## Programación
@@ -39,7 +38,7 @@ La programación del PIC16F887 se realizó utilizando MPLAB. El código desarrol
 ### Código fuente
 
 **Código en MPLAB:**  
-[Ver código](./practica1/contador.c)
+[Ver código](/Practica1/contador.c)
 
 ## Resultado
 
@@ -47,7 +46,7 @@ Una vez programado el microcontrolador y ensamblado el circuito, se obtuvo el fu
 
 ### Resultado físico
 
-![Resultado contador de 6 bits](./practica1/Contador.jpg)
+![Resultado contador de 6 bits](/Practica1/Contador.jpg)
 
 ---
 
@@ -65,7 +64,7 @@ Al igual que en la actividad anterior, se empleó Proteus para verificar el corr
 ### Simulación en Proteus
 
 **Archivo de simulación:**  
-[Descargar simulación](./practica1/base_micro.pdsprj)
+[Descargar simulación](/Practica1/base_micro.pdsprj)
 
 
 ## Programación
@@ -75,7 +74,7 @@ La programación se realizó en MPLAB utilizando lenguaje C para controlar la se
 ### Código fuente
 
  **Código en MPLAB:**  
-[Ver código](./practica1/Caminata.c)
+[Ver código](/Practica1/Caminata.c)
 
 ## Resultado
 
@@ -83,7 +82,7 @@ Después de cargar el programa en el PIC16F887 y realizar las conexiones corresp
 
 ### Resultado físico
 
-![Resultado caminata de LEDs](./practica1/caminata.jpg)
+![Resultado caminata de LEDs](/Practica1/caminata.jpg)
 
 
 
