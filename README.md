@@ -47,7 +47,7 @@ Una vez programado el microcontrolador y ensamblado el circuito, se obtuvo el fu
 
 ### Resultado físico
 
-![Resultado contador de 6 bits](/practica1/contador.jpg)
+![Resultado contador de 6 bits](/practica1/Contador.jpg)
 
 ---
 
@@ -75,7 +75,7 @@ La programación se realizó en MPLAB utilizando lenguaje C para controlar la se
 ### Código fuente
 
  **Código en MPLAB:**  
-[Ver código](/practica1/caminata.c)
+[Ver código](/practica1/Caminata.c)
 
 ## Resultado
 
