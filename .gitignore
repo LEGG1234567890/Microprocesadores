@@ -67,3 +67,15 @@ __pycache__/
 # === Archivos de control de versiones que no interesan ===
 .DS_Store
 Thumbs.db
+.generated_files/
+build/
+dist/
+nbproject/
+Makefile*
+Package-*
+private/
+_build/
+!cmake/**/user.cmake
+cmake/**/.generated/*
+cmake/**/CMake*
+out/
