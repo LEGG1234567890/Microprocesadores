@@ -35,8 +35,6 @@ Antes de realizar la implementación física, se utilizó Proteus para diseñar 
 
 La programación del PIC16F887 se realizó utilizando MPLAB. El código desarrollado controla el incremento del contador y la visualización de los estados binarios mediante los LEDs.
 
-### Código fuente
-
 **Código en MPLAB:**  
 [Ver código](/Practica1/contador.c)
 
@@ -70,8 +68,6 @@ Al igual que en la actividad anterior, se empleó Proteus para verificar el corr
 ## Programación
 
 La programación se realizó en MPLAB utilizando lenguaje C para controlar la secuencia de encendido y apagado de los LEDs.
-
-### Código fuente
 
  **Código en MPLAB:**  
 [Ver código](/Practica1/Caminata.c)
