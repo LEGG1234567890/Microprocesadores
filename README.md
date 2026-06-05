@@ -7,7 +7,7 @@ En esta práctica se implementaron dos aplicaciones utilizando el microcontrolad
 | Cantidad | Componente |
 |-----------|------------|
 | 8 | LEDs |
-| 8 | Resistencias de 330 Ω |
+| 8 | Resistencias de 330 $\Omega$ |
 | 1 | PIC16F887 |
 | 1 | Push Button |
 | 1 | Cristal de cuarzo de 8 MHz |
