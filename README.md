@@ -78,3 +78,86 @@ Después de cargar el programa en el PIC16F887 y realizar las conexiones corresp
 #### Resultado físico
 
 ![Resultado caminata de LEDs](./Practica1/Caminata.jpeg)
+
+
+
+##  Práctica 2: Visualización de Letras en una Matriz de LEDs con PIC16F887
+
+### Descripción
+
+En esta práctica se utilizó el microcontrolador PIC16F887 para controlar una matriz de LEDs y mostrar diferentes letras mediante programación.
+
+| Cantidad | Componente |
+|-----------|------------|
+| 1 | Matriz de LEDs |
+| 1 | PIC16F887 |
+| 1 | Push Button |
+| 1 | Cristal de cuarzo de $8 MHz$ |
+| 1 | Fuente de alimentación de $5 V$ |
+
+---
+
+## Iluminación de la Letra X
+
+### Descripción
+
+Para esta primera actividad se programó la matriz de LEDs para representar la letra X mediante un patrón específico de encendido y apagado de LEDs. Permitiendo entender la distribución de filas y columnas necesarias para generar caracteres en una matriz.
+
+
+### Simulación
+
+Antes de realizar la implementación física, se utilizó Proteus para diseñar y verificar el funcionamiento del circuito. La simulación permitió comprobar que la letra se mostrara correctamente en la matriz de LEDs.
+
+
+#### Simulación en Proteus
+
+**Archivo de simulación:**  
+[Descargar simulación](./Practica2/base_micro.pdsprj)
+
+### Programación
+
+La programación del PIC16F887 se realizó utilizando MPLAB. El código desarrollado define el patrón necesario para representar la letra X en la matriz de LEDs.
+
+**Código en MPLAB:**  
+[Ver código](./Practica2/X.c)
+
+### Resultado
+
+Después de programar el microcontrolador y realizar las conexiones correspondientes, se obtuvo la visualización correcta de la letra X en la matriz de LEDs.
+
+#### Resultado físico
+
+![Resultado matriz de leds con 'X'](./Practica2/X.mp4)
+
+---
+
+## Iluminación de las Letras A, N, K e I
+
+### Descripción
+
+Siguiendo el mismo procedimiento realizado para la letra X, se programaron nuevos patrones de iluminación para representar las letras A, N, K e I. Para ello únicamente fue necesario modificar el código correspondiente a cada patrón de encendido dentro de la matriz de LEDs.
+
+
+### Simulación
+
+Al igual que en la actividad anterior, se empleó Proteus para verificar el correcto funcionamiento de la secuencia antes de la implementación física.
+
+#### Simulación en Proteus
+
+**Archivo de simulación:**  
+[Descargar simulación](./Practica2/base_micro.pdsprj)
+
+### Programación
+
+La programación se realizó en MPLAB modificando los patrones de encendido para representar cada una de las letras en la matriz de LEDs.
+
+ **Código en MPLAB:**  
+[Ver código](./Practica2/ANKI.c)
+
+### Resultado
+
+Una vez cargado el programa en el PIC16F887 y realizadas las conexiones correspondientes, se logró visualizar correctamente las letras A, N, K e I en la matriz de LEDs.
+
+#### Resultado físico
+
+![Resultado matriz de leds con 'A', 'N', 'K' e 'I'](./Practica2/ANKI.mp4)
