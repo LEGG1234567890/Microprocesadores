@@ -216,7 +216,7 @@ Después de programar el microcontrolador y realizar las conexiones correspondie
 
 #### Resultado físico
 
-![Resultado números del 0 al 9](./Practica3/Cont.gif)
+![Resultado números del 0 al 9](./Practica3/Cont.jpeg)
 
 ---
 
