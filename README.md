@@ -127,7 +127,7 @@ Después de programar el microcontrolador y realizar las conexiones correspondie
 
 #### Resultado físico
 
-![Resultado matriz de leds con 'X'](./Practica2/X.mp4)
+![Resultado matriz de leds con 'X'](./Practica2/X.gif)
 
 ---
 
@@ -160,4 +160,4 @@ Una vez cargado el programa en el PIC16F887 y realizadas las conexiones correspo
 
 #### Resultado físico
 
-![Resultado matriz de leds con 'A', 'N', 'K' e 'I'](./Practica2/ANKI.mp4)
+![Resultado matriz de leds con 'A', 'N', 'K' e 'I'](./Practica2/ANKI.gif)
