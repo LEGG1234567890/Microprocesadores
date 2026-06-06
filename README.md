@@ -9,12 +9,12 @@ En esta práctica se implementaron dos aplicaciones utilizando el microcontrolad
 | Cantidad | Componente |
 |-----------|------------|
 | 8 | LEDs |
-| 8 | Resistencias de 330 $\Omega$ |
-| 1 | Resistencia de 1 $k\Omega$ |
+| 8 | Resistencias de 330 Ω |
+| 1 | Resistencia de 1 kΩ |
 | 1 | PIC16F887 |
 | 1 | Push Button |
-| 1 | Cristal de cuarzo de $8 MHz$ |
-| 1 | Fuente de alimentación de $5 V$ |
+| 1 | Cristal de cuarzo de 8 MHz |
+| 1 | Fuente de alimentación de 5 V |
 
 ---
 
@@ -91,11 +91,11 @@ En esta práctica se utilizó el microcontrolador PIC16F887 para controlar una m
 | Cantidad | Componente |
 |-----------|------------|
 | 1 | Matriz de LEDs |
-| 1 | Resistencia de 1 $k\Omega$ |
+| 1 | Resistencia de 1 kΩ |
 | 1 | PIC16F887 |
 | 1 | Push Button |
-| 1 | Cristal de cuarzo de $8 MHz$ |
-| 1 | Fuente de alimentación de $5 V$ |
+| 1 | Cristal de cuarzo de 8 MHz |
+| 1 | Fuente de alimentación de 5 V |
 
 ---
 
@@ -175,12 +175,12 @@ En esta práctica se utilizó el microcontrolador PIC16F887 para controlar un di
 | Cantidad | Componente |
 |-----------|------------|
 | 1 | Display de 7 segmentos |
-| 7 | Resistencias de 330 $\Omega$ |
-| 1 | Resistencia de 1 $k\Omega$ |
+| 7 | Resistencias de 330 Ω |
+| 1 | Resistencia de 1 kΩ |
 | 1 | PIC16F887 |
 | 1 | Push Button |
-| 1 | Cristal de cuarzo de $8 MHz$ |
-| 1 | Fuente de alimentación de $5 V$ |
+| 1 | Cristal de cuarzo de 8 MHz |
+| 1 | Fuente de alimentación de 5 V |
 
 ---
 
@@ -252,3 +252,5 @@ Una vez cargado el programa en el PIC16F887 y realizadas las conexiones correspo
 
 ![Resultado hexadecimal 0 a F](./Practica2/HEX.gif)
 
+#### Firma de Honor:
+Damos nuestra palabra de que hemos realizado esta actividad con integridad academica
