@@ -253,4 +253,4 @@ Una vez cargado el programa en el PIC16F887 y realizadas las conexiones correspo
 ![Resultado hexadecimal 0 a F](./Practica2/HEX.gif)
 
 #### Firma de Honor:
-Damos nuestra palabra de que hemos realizado esta actividad con integridad academica
+Damos nuestra palabra de que hemos realizado esta actividad con integridad académica
