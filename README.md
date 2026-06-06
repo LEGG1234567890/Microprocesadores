@@ -10,6 +10,7 @@ En esta práctica se implementaron dos aplicaciones utilizando el microcontrolad
 |-----------|------------|
 | 8 | LEDs |
 | 8 | Resistencias de 330 $\Omega$ |
+| 1 | Resistencia de 1 $k\Omega$ |
 | 1 | PIC16F887 |
 | 1 | Push Button |
 | 1 | Cristal de cuarzo de $8 MHz$ |
@@ -90,6 +91,7 @@ En esta práctica se utilizó el microcontrolador PIC16F887 para controlar una m
 | Cantidad | Componente |
 |-----------|------------|
 | 1 | Matriz de LEDs |
+| 1 | Resistencia de 1 $k\Omega$ |
 | 1 | PIC16F887 |
 | 1 | Push Button |
 | 1 | Cristal de cuarzo de $8 MHz$ |
@@ -161,3 +163,92 @@ Una vez cargado el programa en el PIC16F887 y realizadas las conexiones correspo
 #### Resultado físico
 
 ![Resultado matriz de leds con 'A', 'N', 'K' e 'I'](./Practica2/ANKI.gif)
+
+
+##  Práctica 3: Visualización de Números y Caracteres Hexadecimales en un Display de 7 Segmentos con PIC16F887
+
+
+### Descripción
+
+En esta práctica se utilizó el microcontrolador PIC16F887 para controlar un display de 7 segmentos y mostrar números decimales y caracteres hexadecimales. 
+
+| Cantidad | Componente |
+|-----------|------------|
+| 1 | Display de 7 segmentos |
+| 7 | Resistencias de 330 $\Omega$ |
+| 1 | Resistencia de 1 $k\Omega$ |
+| 1 | PIC16F887 |
+| 1 | Push Button |
+| 1 | Cristal de cuarzo de $8 MHz$ |
+| 1 | Fuente de alimentación de $5 V$ |
+
+---
+
+## Visualización de Números del 0 al 9
+
+### Descripción
+
+Para esta primera actividad se programó el microcontrolador para mostrar de manera secuencial los números del 0 al 9 en el display de 7 segmentos. Permitiendo comprender cómo se controla cada segmento para formar los diferentes dígitos.
+
+
+
+### Simulación
+
+Antes de realizar la implementación física, se utilizó Proteus para diseñar y verificar el funcionamiento del circuito. La simulación permitió comprobar que la secuencia numérica se mostrara correctamente.
+
+
+#### Simulación en Proteus
+
+**Archivo de simulación:**  
+[Descargar simulación](./Practica3/base_micro.pdsprj)
+
+### Programación
+
+La programación del PIC16F887 se realizó utilizando MPLAB. El código desarrollado controla los segmentos necesarios para representar cada número de la secuencia.
+
+
+**Código en MPLAB:**  
+[Ver código](./Practica3/Contador.c)
+
+### Resultado
+
+Después de programar el microcontrolador y realizar las conexiones correspondientes, se obtuvo la visualización correcta de la secuencia numérica del 0 al 9.
+
+#### Resultado físico
+
+![Resultado números del 0 al 9](./Practica3/Cont.gif)
+
+---
+
+## Visualización de Caracteres Hexadecimales (0 a F)
+
+
+### Descripción
+
+Siguiendo el mismo procedimiento realizado para los números decimales, se modificó el programa para incluir los caracteres hexadecimales A, B, C, D, E y F. De esta manera se logró mostrar la secuencia completa de valores hexadecimales desde 0 hasta F.
+
+
+### Simulación
+
+Se utilizó Proteus para verificar el correcto funcionamiento de la secuencia hexadecimal antes de realizar la implementación física.
+
+#### Simulación en Proteus
+
+**Archivo de simulación:**  
+[Descargar simulación](./Practica3/base_micro.pdsprj)
+
+### Programación
+
+La programación se realizó en MPLAB modificando los patrones de activación de los segmentos para representar las letras A, B, C, D, E y F en el display.
+
+ **Código en MPLAB:**  
+[Ver código](./Practica3/Todo.c)
+
+### Resultado
+
+Una vez cargado el programa en el PIC16F887 y realizadas las conexiones correspondientes, se logró visualizar correctamente la secuencia hexadecimal completa desde 0 hasta F.
+
+#### Resultado físico
+
+![Resultado hexadecimal 0 a F](./Practica2/HEX.gif)
+
