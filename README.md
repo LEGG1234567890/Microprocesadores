@@ -30,6 +30,8 @@ Antes de realizar la implementación física, se utilizó Proteus para diseñar 
 
 #### Simulación en Proteus
 
+![Esquematico](./Practica1/Simulacion.png)
+
 **Archivo de simulación:**  
 [Descargar simulación](./Practica1/base_micro.pdsprj)
 
@@ -62,6 +64,8 @@ Al igual que en la actividad anterior, se empleó Proteus para verificar el corr
 
 #### Simulación en Proteus
 
+![Esquematico](./Practica1/Simulacion.png)
+
 **Archivo de simulación:**  
 [Descargar simulación](./Practica1/base_micro.pdsprj)
 
@@ -79,8 +83,6 @@ Después de cargar el programa en el PIC16F887 y realizar las conexiones corresp
 #### Resultado físico
 
 ![Resultado caminata de LEDs](./Practica1/Caminata.jpeg)
-
-
 
 ##  Práctica 2: Visualización de Letras en una Matriz de LEDs con PIC16F887
 
@@ -105,13 +107,13 @@ En esta práctica se utilizó el microcontrolador PIC16F887 para controlar una m
 
 Para esta primera actividad se programó la matriz de LEDs para representar la letra X mediante un patrón específico de encendido y apagado de LEDs. Permitiendo entender la distribución de filas y columnas necesarias para generar caracteres en una matriz.
 
-
 ### Simulación
 
 Antes de realizar la implementación física, se utilizó Proteus para diseñar y verificar el funcionamiento del circuito. La simulación permitió comprobar que la letra se mostrara correctamente en la matriz de LEDs.
 
-
 #### Simulación en Proteus
+
+![Esquematico](./Practica2/Simulacion.png)
 
 **Archivo de simulación:**  
 [Descargar simulación](./Practica2/base_micro.pdsprj)
@@ -146,7 +148,9 @@ Al igual que en la actividad anterior, se empleó Proteus para verificar el corr
 
 #### Simulación en Proteus
 
-**Archivo de simulación:**  
+![Esquematico](./Practica2/Simulacion.png)
+
+**Archivo de simulación:**
 [Descargar simulación](./Practica2/base_micro.pdsprj)
 
 ### Programación
@@ -164,9 +168,7 @@ Una vez cargado el programa en el PIC16F887 y realizadas las conexiones correspo
 
 ![Resultado matriz de leds con 'A', 'N', 'K' e 'I'](./Practica2/ANKI.gif)
 
-
 ##  Práctica 3: Visualización de Números y Caracteres Hexadecimales en un Display de 7 Segmentos con PIC16F887
-
 
 ### Descripción
 
@@ -190,14 +192,13 @@ En esta práctica se utilizó el microcontrolador PIC16F887 para controlar un di
 
 Para esta primera actividad se programó el microcontrolador para mostrar de manera secuencial los números del 0 al 9 en el display de 7 segmentos. Permitiendo comprender cómo se controla cada segmento para formar los diferentes dígitos.
 
-
-
 ### Simulación
 
 Antes de realizar la implementación física, se utilizó Proteus para diseñar y verificar el funcionamiento del circuito. La simulación permitió comprobar que la secuencia numérica se mostrara correctamente.
 
-
 #### Simulación en Proteus
+
+![Esquematico](./Practica3/Simulacion.png)
 
 **Archivo de simulación:**  
 [Descargar simulación](./Practica3/base_micro.pdsprj)
@@ -205,7 +206,6 @@ Antes de realizar la implementación física, se utilizó Proteus para diseñar 
 ### Programación
 
 La programación del PIC16F887 se realizó utilizando MPLAB. El código desarrollado controla los segmentos necesarios para representar cada número de la secuencia.
-
 
 **Código en MPLAB:**  
 [Ver código](./Practica3/Contador.c)
@@ -222,17 +222,17 @@ Después de programar el microcontrolador y realizar las conexiones correspondie
 
 ## Visualización de Caracteres Hexadecimales (0 a F)
 
-
 ### Descripción
 
 Siguiendo el mismo procedimiento realizado para los números decimales, se modificó el programa para incluir los caracteres hexadecimales A, B, C, D, E y F. De esta manera se logró mostrar la secuencia completa de valores hexadecimales desde 0 hasta F.
-
 
 ### Simulación
 
 Se utilizó Proteus para verificar el correcto funcionamiento de la secuencia hexadecimal antes de realizar la implementación física.
 
 #### Simulación en Proteus
+
+![Esquematico](./Practica3/Simulacion.png)
 
 **Archivo de simulación:**  
 [Descargar simulación](./Practica3/base_micro.pdsprj)
