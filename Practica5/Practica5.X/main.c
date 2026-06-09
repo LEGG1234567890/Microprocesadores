@@ -20,46 +20,55 @@
 
 #define _XTAL_FREQ 8000000      // Frecuencia del oscilador (para __delay_ms y __delay_us)
 
-unsigned char Estado1, Estado2, Estado3;
-unsigned char Estado1A = 0, Estado2A = 0, Estado3A = 0;
-unsigned char Estado = 0;
 unsigned char patron[10] = {0x3f, 0x6, 0x5b, 0x4f, 0x66, 0x6d, 0x7d, 0x7, 0x7f, 0x6f};
-int cuenta = 0;
+unsigned char lado=1;
+int num = 0;
 
 void main(void){
     ANSEL  = 0;
     ANSELH = 0;
+    TRISD = 0b00000000;
+    TRISC = 0;
+    TRISB = 0x01;
+    PORTD = 0b00000000;
+    PORTC = 0;
     OPTION_REG = OPTION_REG & 0b01111111;
-    TRISB = 0xFF;
-    TRISC = 0x00;
-    TRISD = 0x00;
-    PORTC = 0x00;
-    PORTD = 0x00;
+    INTEDG = 0;
+    INTF = 0;
+    INTE = 1;
+    GIE = 1;
     while(1){
-        Estado1 = (PORTBbits.RB0 == 0) ? 1 : 0;
-        Estado2 = (PORTBbits.RB1 == 0) ? 1 : 0;
-        Estado3 = (PORTBbits.RB2 == 0) ? 1 : 0;
-        if(Estado1 == 1 && Estado1A == 0){
-            if(Estado == 0)
-                cuenta += 1;
-            else
-                cuenta += 2;
+        int uni = num%10;
+        int dec = (num/10)%10;
+        int cen = (num/100)%10;
+        int mil = (num/1000)%10;
+        for(int i = 0; i < 50; i++){
+            PORTC = 0b11110111;
+            PORTD = patron[mil];
+            __delay_ms(1);
+            PORTC = 0b11111011;
+            PORTD = patron[cen];
+            __delay_ms(1);
+            PORTC = 0b11111101;
+            PORTD = patron[dec];
+            __delay_ms(1);
+            PORTC = 0b11111110;
+            PORTD = patron[uni];
+            __delay_ms(1);
         }
-        if(Estado2 == 1 && Estado2A == 0){
-            if(Estado == 0)
-                cuenta -= 1;
-            else
-                cuenta -= 2;
+        if(lado){
+            num++;
+        }else{
+            num--;
         }
-        if(Estado3 == 1 && Estado3A == 0){
-            Estado = !Estado;
-        }
-        Estado1A = Estado1;
-        Estado2A = Estado2;
-        Estado3A = Estado3;
-        if(cuenta > 99) cuenta = cuenta - 100;
-        if(cuenta < 0)  cuenta = cuenta + 100;
-        PORTD = patron[cuenta % 10];
-        PORTC = patron[(cuenta / 10) % 10];
+        if(num > 9999) num = num - 10000;
+        if(num < 0)  num = num + 10000;
+    }
+}
+
+void __interrupt() ISR(void){
+    if(INTF){
+        lado = !lado;
+        INTF = 0;
     }
 }
