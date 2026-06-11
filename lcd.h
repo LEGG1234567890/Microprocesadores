@@ -1,4 +1,3 @@
-
 #ifndef LCD_H
 #define	LCD_H
 
@@ -94,4 +93,3 @@ void LCD_Out ( char a );
 #endif
 
 #endif	/* LCD_H */
-

@@ -1,4 +1,8 @@
 #include <xc.h>         // Biblioteca principal del compilador XC8
+// #include <stdio.h>
+// #include <stdlib.h>
+// #include <stdbool.h>
+// #include "lcd.h"
 
 //=============================================================================
 // CONFIGURACI�N DE BITS DE CONFIGURACI�N (FUSES)

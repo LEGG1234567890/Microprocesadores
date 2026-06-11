@@ -5,7 +5,7 @@
  * Created on 31 de mayo de 2023, 07:54 PM
  */
 
-#define _XTAL_FREQ 4000000
+#define _XTAL_FREQ 8000000
 
 #include <stdbool.h>
 #include <xc.h>
