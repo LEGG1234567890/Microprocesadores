@@ -252,5 +252,67 @@ Una vez cargado el programa en el PIC16F887 y realizadas las conexiones correspo
 
 ![Resultado hexadecimal 0 a F](./Practica2/HEX.gif)
 
+##  Práctica 4: Contador de 0 a 99 con Control por Botones utilizando PIC16F887
+
+### Descripción
+
+En esta práctica se desarrolló un contador ascendente y descendente de 0 a 99 utilizando el microcontrolador PIC16F887 y dos displays de 7 segmentos. El sistema cuenta con botones que permiten incrementar o disminuir el valor mostrado.
+
+
+| Cantidad | Componente |
+|-----------|------------|
+| 2 | Display de 7 segmentos |
+| 1 | Resistencias de 1kΩ |
+| 1 | PIC16F887 |
+| 1 | Push Button |
+| 1 | Cristal de cuarzo de 8 MHz |
+| 1 | Fuente de alimentación de 5 V |
+
+---
+
+### Funcionamiento 
+
+El sistema utiliza tres botones principales para controlar el contador: 
+- **Botón de incremento:** aumenta el valor mostrado.
+- **Botón de decremento:** disminuye el valor mostrado.
+- **Botón selector:** permite seleccionar el tamaño del incremento o decremento.
+
+| Estado del selector | Incremento | Decremento |
+|--------------------|------------|------------|
+| OFF | +1 | -1 | 
+| ON | +2 | -2 |
+
+
+
+El contador funciona dentro del rango de 0 a 99, mostrando el valor actual en dos displays de 7 segmentos.
+
+### Simulación
+
+Antes de realizar la implementación física, se utilizó Proteus para diseñar y verificar el funcionamiento del circuito. La simulación permitió validar el comportamiento de los botones, los displays y contador.
+
+#### Simulación en Proteus
+
+![Esquematico](./Practica4/Simulacion.png)
+
+**Archivo de simulación:**  
+[Descargar simulación](./Practica4/base_micro.pdsprj)
+
+### Programación
+
+La programación del PIC16F887 se realizó utilizando MPLAB. El código desarrollado controla los segmentos necesarios para representar los distintos modos.
+
+**Código en MPLAB:**  
+[Ver código](./Practica4/Contador.hex)
+
+### Resultado
+
+Después de programar el microcontrolador y realizar las conexiones correspondientes, se obtuvo un contador funcional capaz de incrementar y decrementar valores entre 0 y 99.
+
+#### Resultado físico
+
+![Resultado números del 0 al 99](./Practica4/Contador.jpeg)
+
+
+
 #### Firma de Honor:
 Damos nuestra palabra de que hemos realizado esta actividad con integridad académica
