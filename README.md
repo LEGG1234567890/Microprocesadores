@@ -252,7 +252,7 @@ Una vez cargado el programa en el PIC16F887 y realizadas las conexiones correspo
 
 ![Resultado hexadecimal 0 a F](./Practica2/HEX.gif)
 
-##  Práctica 4: Contador de 0 a 99 con Control por Botones utilizando PIC16F887
+##  Práctica 4: Contador de 0 a 99 controlado con botones utilizando PIC16F887
 
 ### Descripción
 
