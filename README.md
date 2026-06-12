@@ -310,7 +310,7 @@ Después de programar el microcontrolador y realizar las conexiones correspondie
 
 #### Resultado físico
 
-![Resultado números del 0 al 99](./Practica4/Contador.jpeg)
+![Resultado números del 0 al 99](./Practica4/Contador.gif)
 
 
 
