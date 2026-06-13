@@ -365,7 +365,7 @@ Después de realizar las conexiones y cargar el programa en el microcontrolador,
 
 ### Creación de un Carácter Personalizado y Cambio de Mensajes 
 
-En esta  actividad se utilizó la memoria de la pantalla LCD para diseñar y almacenar un carácter personalizado. Además, se implementó una función que permite alternar entre dos mensajes distintos. Utilizándose la simulación de Proteus mostrada previamente.
+En esta  actividad se utilizó la memoria de la pantalla LCD para diseñar y almacenar un carácter personalizado. Además, se implementó una función que permite alternar entre dos mensajes distintos "Hola mundo!" y "Adios mundo!". Utilizándose la simulación de Proteus mostrada previamente.
 
 
 ### Programación
