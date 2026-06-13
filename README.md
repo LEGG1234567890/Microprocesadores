@@ -438,7 +438,7 @@ Después de realizar las conexiones y cargar el programa en el microcontrolador,
 
 ![Resultado mediciones LCD](./Practica8/lcdv.gif)
 
-=
+
 
 #### Firma de Honor:
 Damos nuestra palabra de que hemos realizado esta actividad con integridad académica
