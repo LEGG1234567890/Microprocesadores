@@ -322,7 +322,9 @@ En esta práctica se utilizó el microcontrolador PIC16F887 para controlar una p
 | Cantidad | Componente |
 |-----------|------------|
 | 1 | Pantalla LCD |
+| 1 | Potenciometro 1 kΩ |
 | 1 | Resistencia de 330 Ω |
+| 1 | Resistencia de 1 kΩ |
 | 1 | PIC16F887 |
 | 1 | Push Button |
 | 1 | Cristal de cuarzo de 8 MHz |
@@ -380,6 +382,63 @@ Una vez cargado el programa y realizadas las conexiones correspondientes, se mue
 #### Resultado físico
 
 ![Resultado carácter personalizado](./Practica6/lcdc.gif)
+
+##  Práctica 8: Lectura de Voltaje y Conversión ADC con LCD 
+
+### Descripción
+
+En esta práctica se utilizó el microcontrolador PIC16F887 para realizar la lectura de señales analógicas mediante su convertidor analógico-digital (ADC). La información se muestra en una pantalla LCD, permitiendo visualizar el voltaje aplicado, su porcentaje respecto al valor máximo y el valor digital generado por el ADC. Seleccionando cuál de las entradas analógicas se deseaba visualizar.
+
+
+
+| Cantidad | Componente |
+|-----------|------------|
+| 1 | Pantalla LCD |
+| 3 | Potenciometro 1 kΩ |
+| 1 | Resistencia de 330 Ω |
+| 1 | Resistencia de 1 kΩ |
+| 1 | PIC16F887 |
+| 1 | Push Button |
+| 1 | Cristal de cuarzo de 8 MHz |
+| 1 | Fuente de alimentación de 5 V |
+
+---
+
+### Lectura de Voltaje, Porcentaje y Valor ADC 
+
+En esta práctica se utilizaron potenciómetros para generar distintos niveles de voltaje en las entradas analógicas del microcontrolador. Realizando la conversión analógico-digital y muestra en la pantalla LCD: 
+- El voltaje medido.
+- El porcentaje correspondiente respecto al voltaje de referencia.
+- El valor digital obtenido por el ADC.
+
+
+### Simulación
+
+Antes de realizar la implementación física, se utilizó Proteus para diseñar y verificar el funcionamiento del circuito. La simulación permitió comprobar la correcta lectura de los voltajes y su visualización en la pantalla LCD.
+
+#### Simulación en Proteus
+
+![Esquematico](./Practica8/lcdv.png)
+
+**Archivo de simulación:**  
+[Descargar simulación](./Practica8/base_micro.pdsprj)
+
+### Programación
+
+La programación del PIC16F887 se realizó utilizando MPLAB. Donde se realiza la conversión de las señales analógicas y calcula tanto el voltaje como el porcentaje correspondiente para mostrarlos en la pantalla LCD.
+
+**Código en MPLAB:**  
+[Ver código](./Practica8/Simultaneo.hex)
+
+### Resultado
+
+Después de realizar las conexiones y cargar el programa en el microcontrolador, se visualizó correctamente el voltaje, el porcentaje y el valor ADC correspondientes a la entrada seleccionada.
+
+#### Resultado físico
+
+![Resultado mediciones LCD](./Practica8/lcdv.gif)
+
+=
 
 #### Firma de Honor:
 Damos nuestra palabra de que hemos realizado esta actividad con integridad académica
