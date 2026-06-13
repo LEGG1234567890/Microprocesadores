@@ -365,7 +365,7 @@ Después de realizar las conexiones y cargar el programa en el microcontrolador,
 
 ### Creación de un Carácter Personalizado y Cambio de Mensajes 
 
-En esta  actividad se utilizó la memoria CGRAM de la pantalla LCD para diseñar y almacenar un carácter personalizado. Además, se implementó una función que permite alternar entre dos mensajes distintos. Utilizándose la simulación de Proteus mostrada previamente.
+En esta  actividad se utilizó la memoria de la pantalla LCD para diseñar y almacenar un carácter personalizado. Además, se implementó una función que permite alternar entre dos mensajes distintos. Utilizándose la simulación de Proteus mostrada previamente.
 
 
 ### Programación
@@ -387,7 +387,7 @@ Una vez cargado el programa y realizadas las conexiones correspondientes, se mue
 
 ### Descripción
 
-En esta práctica se utilizó el microcontrolador PIC16F887 para realizar la lectura de señales analógicas mediante su convertidor analógico-digital (ADC). La información se muestra en una pantalla LCD, permitiendo visualizar el voltaje aplicado, su porcentaje respecto al valor máximo y el valor digital generado por el ADC. Seleccionando cuál de las entradas analógicas se deseaba visualizar.
+En esta práctica se utilizó el microcontrolador PIC16F887 para realizar la lectura de señales analógicas mediante su convertidor analógico digital (ADC). La información se muestra en una pantalla LCD, permitiendo visualizar el voltaje aplicado, su porcentaje respecto al valor máximo y el valor digital generado por el ADC. Seleccionando cuál de las entradas analógicas se deseaba visualizar.
 
 
 
