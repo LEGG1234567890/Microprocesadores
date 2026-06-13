@@ -312,7 +312,7 @@ Después de programar el microcontrolador y realizar las conexiones correspondie
 
 ![Resultado números del 0 al 99](./Practica4/Contador.gif)
 
-##  Práctica 5: Manejo de LCD con PIC16F887
+##  Práctica 6: Manejo de LCD con PIC16F887
 
 ### Descripción
 
