@@ -312,7 +312,74 @@ Después de programar el microcontrolador y realizar las conexiones correspondie
 
 ![Resultado números del 0 al 99](./Practica4/Contador.gif)
 
+##  Práctica 5: Manejo de LCD con PIC16F887
 
+### Descripción
+
+En esta práctica se utilizó el microcontrolador PIC16F887 para controlar una pantalla LCD alfanumérica. Como primera parte, se mostraron mensajes predeterminados, incluyendo la frase "Hola Mundo" y el abecedario. Posteriormente, se creó un carácter personalizado mediante programación y se implementó un sistema que permite alternar entre dos mensajes utilizando un botón.
+
+
+| Cantidad | Componente |
+|-----------|------------|
+| 1 | Pantalla LCD |
+| 1 | Resistencia de 330 Ω |
+| 1 | PIC16F887 |
+| 1 | Push Button |
+| 1 | Cristal de cuarzo de 8 MHz |
+| 1 | Fuente de alimentación de 5 V |
+
+---
+
+### Visualización de Mensajes en LCD 
+
+En esta primera actividad se configuró la pantalla LCD para mostrar diferentes cadenas de texto. Inicialmente se desplegó la frase **"Hola Mundo"** y posteriormente el abecedario completo, permitiendo comprender el envío de caracteres y el manejo básico de la pantalla.
+
+
+### Simulación
+
+Antes de realizar la implementación física, se utilizó Proteus para diseñar y verificar el funcionamiento del circuito. La simulación permitió comprobar la correcta visualización de los mensajes en la pantalla LCD.
+
+#### Simulación en Proteus
+
+![Esquematico](./Practica6/lcd.png)
+
+**Archivo de simulación:**  
+[Descargar simulación](./Practica6/base_micro.pdsprj)
+
+### Programación
+
+La programación del PIC16F887 se realizó utilizando MPLAB. El código desarrollado inicializa la pantalla LCD muestra los mensajes programados.
+
+**Código en MPLAB:**  
+[Ver código](./Practica6/Hello.hex)
+
+### Resultado
+
+Después de realizar las conexiones y cargar el programa en el microcontrolador, se logró visualizar correctamente la frase "Hola Mundo" y el abecedario en la pantalla LCD.
+
+#### Resultado físico
+
+![Resultado mensaje LCD](./Practica6/lcdabc.gif)
+
+### Creación de un Carácter Personalizado y Cambio de Mensajes 
+
+En esta  actividad se utilizó la memoria CGRAM de la pantalla LCD para diseñar y almacenar un carácter personalizado. Además, se implementó una función que permite alternar entre dos mensajes distintos.
+
+
+### Programación
+
+La programación se realizó en MPLAB definiendo el patrón del carácter personalizado y desarrollando la lógica para el cambio del mensaje mostrado en pantalla.
+
+**Código en MPLAB:**  
+[Ver código](./Practica6/Casita.hex)
+
+### Resultado
+
+Una vez cargado el programa y realizadas las conexiones correspondientes, se muestra el carácter personalizado.
+
+#### Resultado físico
+
+![Resultado carácter personalizado](./Practica6/lcdc.gif)
 
 #### Firma de Honor:
 Damos nuestra palabra de que hemos realizado esta actividad con integridad académica
