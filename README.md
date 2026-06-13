@@ -406,7 +406,7 @@ En esta práctica se utilizó el microcontrolador PIC16F887 para realizar la lec
 
 ### Lectura de Voltaje, Porcentaje y Valor ADC 
 
-En esta práctica se utilizaron potenciómetros para generar distintos niveles de voltaje en las entradas analógicas del microcontrolador. Realizando la conversión analógico-digital y muestra en la pantalla LCD: 
+En esta práctica se utilizaron potenciómetros para generar distintos niveles de voltaje en las entradas analógicas del microcontrolador. Realizando la conversión analógico-digital y así mostrar en la pantalla LCD: 
 - El voltaje medido.
 - El porcentaje correspondiente respecto al voltaje de referencia.
 - El valor digital obtenido por el ADC.
@@ -425,7 +425,7 @@ Antes de realizar la implementación física, se utilizó Proteus para diseñar 
 
 ### Programación
 
-La programación del PIC16F887 se realizó utilizando MPLAB. Donde se realiza la conversión de las señales analógicas y calcula tanto el voltaje como el porcentaje correspondiente para mostrarlos en la pantalla LCD.
+La programación del PIC16F887 se realizó utilizando MPLAB. Donde se realiza la conversión de las señales analógicas y calcula tanto el voltaje como el porcentaje correspondiente.
 
 **Código en MPLAB:**  
 [Ver código](./Practica8/Simultaneo.hex)
