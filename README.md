@@ -357,7 +357,7 @@ La programación del PIC16F887 se realizó utilizando MPLAB. El código desarrol
 
 ### Resultado
 
-Después de realizar las conexiones y cargar el programa en el microcontrolador, se logró visualizar correctamente la frase "Hola Mundo" y el abecedario en la pantalla LCD.
+Después de realizar las conexiones y cargar el programa en el microcontrolador, se logró visualizar correctamente la frase "Hello World!" y el abecedario en la pantalla LCD.
 
 #### Resultado físico
 
