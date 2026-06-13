@@ -377,7 +377,7 @@ La programación se realizó en MPLAB definiendo el patrón del carácter person
 
 ### Resultado
 
-Una vez cargado el programa y realizadas las conexiones correspondientes, se muestra el carácter personalizado.
+Una vez cargado el programa y realizadas las conexiones correspondientes, se muestra el carácter personalizado con su respectivo mensaje.
 
 #### Resultado físico
 
