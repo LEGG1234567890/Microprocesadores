@@ -316,7 +316,7 @@ Después de programar el microcontrolador y realizar las conexiones correspondie
 
 ### Descripción
 
-En esta práctica se utilizó el microcontrolador PIC16F887 para controlar una pantalla LCD alfanumérica. Como primera parte, se mostraron mensajes predeterminados, incluyendo la frase "Hola Mundo" y el abecedario. Posteriormente, se creó un carácter personalizado mediante programación y se implementó un sistema que permite alternar entre dos mensajes utilizando un botón.
+En esta práctica se utilizó el microcontrolador PIC16F887 para controlar una pantalla LCD alfanumérica. Como primera parte, se mostraron mensajes predeterminados, incluyendo la frase "Hello World!" y el abecedario. Posteriormente, se creó un carácter personalizado mediante programación y se implementó un sistema que permite alternar entre dos mensajes utilizando un botón.
 
 
 | Cantidad | Componente |
@@ -334,7 +334,7 @@ En esta práctica se utilizó el microcontrolador PIC16F887 para controlar una p
 
 ### Visualización de Mensajes en LCD 
 
-En esta primera actividad se configuró la pantalla LCD para mostrar diferentes cadenas de texto. Inicialmente se desplegó la frase **"Hola Mundo"** y posteriormente el abecedario completo, permitiendo comprender el envío de caracteres y el manejo básico de la pantalla.
+En esta primera actividad se configuró la pantalla LCD para mostrar diferentes cadenas de texto. Inicialmente se desplegó la frase "Hello World!" y posteriormente el abecedario completo, permitiendo comprender el envío de caracteres y el manejo básico de la pantalla.
 
 
 ### Simulación
