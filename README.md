@@ -32,14 +32,14 @@ Antes de realizar la implementación física, se utilizó Proteus para diseñar 
 
 ![Esquematico](./Practica1/Simulacion.png)
 
-**Archivo de simulación:**  
+**Archivo de simulación:** 
 [Descargar simulación](./Practica1/base_micro.pdsprj)
 
 ### Programación
 
 La programación del PIC16F887 se realizó utilizando MPLAB. El código desarrollado controla el incremento del contador y la visualización de los estados binarios mediante los LEDs.
 
-**Código en MPLAB:**  
+**Código en MPLAB:** 
 [Ver código](./Practica1/Contador.c)
 
 ### Resultado
@@ -66,14 +66,14 @@ Al igual que en la actividad anterior, se empleó Proteus para verificar el corr
 
 ![Esquematico](./Practica1/Simulacion.png)
 
-**Archivo de simulación:**  
+**Archivo de simulación:** 
 [Descargar simulación](./Practica1/base_micro.pdsprj)
 
 ### Programación
 
 La programación se realizó en MPLAB utilizando lenguaje C para controlar la secuencia de encendido y apagado de los LEDs.
 
- **Código en MPLAB:**  
+ **Código en MPLAB:** 
 [Ver código](./Practica1/Caminata.c)
 
 ### Resultado
@@ -84,7 +84,7 @@ Después de cargar el programa en el PIC16F887 y realizar las conexiones corresp
 
 ![Resultado caminata de LEDs](./Practica1/Caminata.jpeg)
 
-##  Práctica 2: Visualización de Letras en una Matriz de LEDs con PIC16F887
+## Práctica 2: Visualización de Letras en una Matriz de LEDs con PIC16F887
 
 ### Descripción
 
@@ -115,14 +115,14 @@ Antes de realizar la implementación física, se utilizó Proteus para diseñar 
 
 ![Esquematico](./Practica2/Simulacion.png)
 
-**Archivo de simulación:**  
+**Archivo de simulación:** 
 [Descargar simulación](./Practica2/base_micro.pdsprj)
 
 ### Programación
 
 La programación del PIC16F887 se realizó utilizando MPLAB. El código desarrollado define el patrón necesario para representar la letra X en la matriz de LEDs.
 
-**Código en MPLAB:**  
+**Código en MPLAB:** 
 [Ver código](./Practica2/X.c)
 
 ### Resultado
@@ -141,7 +141,6 @@ Después de programar el microcontrolador y realizar las conexiones correspondie
 
 Siguiendo el mismo procedimiento realizado para la letra X, se programaron nuevos patrones de iluminación para representar las letras A, N, K e I. Para ello únicamente fue necesario modificar el código correspondiente a cada patrón de encendido dentro de la matriz de LEDs.
 
-
 ### Simulación
 
 Al igual que en la actividad anterior, se empleó Proteus para verificar el correcto funcionamiento de la secuencia antes de la implementación física.
@@ -157,7 +156,7 @@ Al igual que en la actividad anterior, se empleó Proteus para verificar el corr
 
 La programación se realizó en MPLAB modificando los patrones de encendido para representar cada una de las letras en la matriz de LEDs.
 
- **Código en MPLAB:**  
+ **Código en MPLAB:** 
 [Ver código](./Practica2/ANKI.c)
 
 ### Resultado
@@ -168,7 +167,7 @@ Una vez cargado el programa en el PIC16F887 y realizadas las conexiones correspo
 
 ![Resultado matriz de leds con 'A', 'N', 'K' e 'I'](./Practica2/ANKI.gif)
 
-##  Práctica 3: Visualización de Números y Caracteres Hexadecimales en un Display de 7 Segmentos con PIC16F887
+## Práctica 3: Visualización de Números y Caracteres Hexadecimales en un Display de 7 Segmentos con PIC16F887
 
 ### Descripción
 
@@ -200,14 +199,14 @@ Antes de realizar la implementación física, se utilizó Proteus para diseñar 
 
 ![Esquematico](./Practica3/Simulacion.png)
 
-**Archivo de simulación:**  
+**Archivo de simulación:** 
 [Descargar simulación](./Practica3/base_micro.pdsprj)
 
 ### Programación
 
 La programación del PIC16F887 se realizó utilizando MPLAB. El código desarrollado controla los segmentos necesarios para representar cada número de la secuencia.
 
-**Código en MPLAB:**  
+**Código en MPLAB:** 
 [Ver código](./Practica3/Contador.c)
 
 ### Resultado
@@ -234,14 +233,14 @@ Se utilizó Proteus para verificar el correcto funcionamiento de la secuencia he
 
 ![Esquematico](./Practica3/Simulacion.png)
 
-**Archivo de simulación:**  
+**Archivo de simulación:** 
 [Descargar simulación](./Practica3/base_micro.pdsprj)
 
 ### Programación
 
 La programación se realizó en MPLAB modificando los patrones de activación de los segmentos para representar las letras A, B, C, D, E y F en el display.
 
- **Código en MPLAB:**  
+ **Código en MPLAB:** 
 [Ver código](./Practica3/Todo.c)
 
 ### Resultado
@@ -252,7 +251,7 @@ Una vez cargado el programa en el PIC16F887 y realizadas las conexiones correspo
 
 ![Resultado hexadecimal 0 a F](./Practica2/HEX.gif)
 
-##  Práctica 4: Contador de 0 a 99 controlado con botones utilizando PIC16F887
+## Práctica 4: Contador de 0 a 99 controlado con botones utilizando PIC16F887
 
 ### Descripción
 
@@ -282,8 +281,6 @@ El sistema utiliza tres botones principales para controlar el contador:
 | OFF | +1 | -1 | 
 | ON | +2 | -2 |
 
-
-
 El contador funciona dentro del rango de 0 a 99, mostrando el valor actual en dos displays de 7 segmentos.
 
 ### Simulación
@@ -294,14 +291,14 @@ Antes de realizar la implementación física, se utilizó Proteus para diseñar 
 
 ![Esquematico](./Practica4/Simulacion.png)
 
-**Archivo de simulación:**  
+**Archivo de simulación:** 
 [Descargar simulación](./Practica4/base_micro.pdsprj)
 
 ### Programación
 
 La programación del PIC16F887 se realizó utilizando MPLAB. El código desarrollado controla los segmentos necesarios para representar los distintos modos.
 
-**Código en MPLAB:**  
+**Código en MPLAB:** 
 [Ver código](./Practica4/Contador.hex)
 
 ### Resultado
@@ -312,12 +309,75 @@ Después de programar el microcontrolador y realizar las conexiones correspondie
 
 ![Resultado números del 0 al 99](./Practica4/Contador.gif)
 
-##  Práctica 6: Manejo de LCD con PIC16F887
+## Práctica 5: Contador de 0 a 9999 con/sin boton
+
+### Descripción
+
+En esta práctica se utilizó el microcontrolador PIC16F887 para controlar un display de 4 dígitos, 7 segmentos. Como primera parte, se mostra el conteo hacia adelante. Posteriormente, se implementó un botón, el cual cambiara el sentido (hacia adelante o hacia atras).
+
+| Cantidad | Componente |
+|-----------|------------|
+| 1 | Display de 4 dígitos, 7 segmentos |
+| 1 | Potenciometro 1 kΩ |
+| 1 | Resistencia de 330 Ω |
+| 1 | Resistencia de 1 kΩ |
+| 1 | PIC16F887 |
+| 2 | Push Button |
+| 1 | Cristal de cuarzo de 8 MHz |
+| 1 | Fuente de alimentación de 5 V |
+
+---
+
+### Visualización del conteo
+
+En esta primera actividad se configuró el display de 4 dígitos, 7 segmentos para mostrar el conteo hacia delante.
+
+### Simulación
+
+Antes de realizar la implementación física, se utilizó Proteus para diseñar y verificar el funcionamiento del circuito. La simulación permitió comprobar la correcta visualización del display de 4 dígitos, 7 segmentos.
+
+#### Simulación en Proteus
+
+![Esquematico](./Practica5/Simulacion_a.png)
+
+**Archivo de simulación:** 
+[Descargar simulación](./Practica5/base_micro.pdsprj)
+
+### Programación
+
+La programación del PIC16F887 se realizó utilizando MPLAB. El código desarrollado inicializa el contador en 0.
+
+**Código en MPLAB:** 
+[Ver código](./Practica5/a.hex)
+
+### Resultado
+
+Después de realizar las conexiones y cargar el programa en el microcontrolador, se logró visualizar correctamente el funcionamiento.
+
+### Cambio del sentido del contador 
+
+En esta actividad se utilizó un boton. En el cual, se implementó una función que permite alternar el sentido. Utilizándose la simulación de Proteus mostrada previamente.
+
+### Programación
+
+La programación se realizó en MPLAB definiendo el patrón del carácter personalizado y desarrollando la lógica para el cambio del mensaje mostrado en pantalla.
+
+**Código en MPLAB:** 
+[Ver código](./Practica5/b.hex)
+
+### Resultado
+
+Una vez cargado el programa y realizadas las conexiones correspondientes, se muestra el resultado.
+
+#### Resultado físico
+
+![Resultado físico](./Practica5/9999.gif)
+
+## Práctica 6: Manejo de LCD con PIC16F887
 
 ### Descripción
 
 En esta práctica se utilizó el microcontrolador PIC16F887 para controlar una pantalla LCD alfanumérica. Como primera parte, se mostraron mensajes predeterminados, incluyendo la frase "Hello World!" y el abecedario. Posteriormente, se creó un carácter personalizado mediante programación y se implementó un sistema que permite alternar entre dos mensajes utilizando un botón.
-
 
 | Cantidad | Componente |
 |-----------|------------|
@@ -336,7 +396,6 @@ En esta práctica se utilizó el microcontrolador PIC16F887 para controlar una p
 
 En esta primera actividad se configuró la pantalla LCD para mostrar diferentes cadenas de texto. Inicialmente se desplegó la frase "Hello World!" y posteriormente el abecedario completo, permitiendo comprender el envío de caracteres y el manejo básico de la pantalla.
 
-
 ### Simulación
 
 Antes de realizar la implementación física, se utilizó Proteus para diseñar y verificar el funcionamiento del circuito. La simulación permitió comprobar la correcta visualización de los mensajes en la pantalla LCD.
@@ -345,14 +404,14 @@ Antes de realizar la implementación física, se utilizó Proteus para diseñar 
 
 ![Esquematico](./Practica6/lcd.png)
 
-**Archivo de simulación:**  
+**Archivo de simulación:** 
 [Descargar simulación](./Practica6/base_micro.pdsprj)
 
 ### Programación
 
 La programación del PIC16F887 se realizó utilizando MPLAB. El código desarrollado inicializa la pantalla LCD muestra los mensajes programados.
 
-**Código en MPLAB:**  
+**Código en MPLAB:** 
 [Ver código](./Practica6/Hello.hex)
 
 ### Resultado
@@ -365,14 +424,13 @@ Después de realizar las conexiones y cargar el programa en el microcontrolador,
 
 ### Creación de un Carácter Personalizado y Cambio de Mensajes 
 
-En esta  actividad se utilizó la memoria de la pantalla LCD para diseñar y almacenar un carácter personalizado. Además, se implementó una función que permite alternar entre dos mensajes distintos "Hola mundo!" y "Adios mundo!". Utilizándose la simulación de Proteus mostrada previamente.
-
+En esta actividad se utilizó la memoria de la pantalla LCD para diseñar y almacenar un carácter personalizado. Además, se implementó una función que permite alternar entre dos mensajes distintos "Hola mundo!" y "Adios mundo!". Utilizándose la simulación de Proteus mostrada previamente.
 
 ### Programación
 
 La programación se realizó en MPLAB definiendo el patrón del carácter personalizado y desarrollando la lógica para el cambio del mensaje mostrado en pantalla.
 
-**Código en MPLAB:**  
+**Código en MPLAB:** 
 [Ver código](./Practica6/Casita.hex)
 
 ### Resultado
@@ -383,13 +441,63 @@ Una vez cargado el programa y realizadas las conexiones correspondientes, se mue
 
 ![Resultado carácter personalizado](./Practica6/lcdc.gif)
 
-##  Práctica 8: Lectura de Voltaje y Conversión ADC con LCD 
+## Práctica 7: Lectura de y Conversión ADC con LCD 
 
 ### Descripción
 
 En esta práctica se utilizó el microcontrolador PIC16F887 para realizar la lectura de señales analógicas mediante su convertidor analógico digital (ADC). La información se muestra en una pantalla LCD, permitiendo visualizar el voltaje aplicado, su porcentaje respecto al valor máximo y el valor digital generado por el ADC. Seleccionando cuál de las entradas analógicas se deseaba visualizar.
 
+| Cantidad | Componente |
+|-----------|------------|
+| 1 | Pantalla LCD |
+| 2 | Potenciometro 1 kΩ |
+| 1 | Resistencia de 330 Ω |
+| 1 | Resistencia de 1 kΩ |
+| 1 | PIC16F887 |
+| 2 | Push Button |
+| 1 | Cristal de cuarzo de 8 MHz |
+| 1 | Fuente de alimentación de 5 V |
 
+---
+
+### Lectura de Voltaje, Porcentaje y Valor ADC 
+
+En esta práctica se utilizaron potenciómetros para generar distintos niveles de voltaje en las entradas analógicas del microcontrolador. Realizando la conversión analógico-digital y así mostrar en la pantalla LCD: 
+- El voltaje medido.
+- El porcentaje correspondiente respecto al voltaje de referencia.
+- El valor digital obtenido por el ADC.
+
+### Simulación
+
+Antes de realizar la implementación física, se utilizó Proteus para diseñar y verificar el funcionamiento del circuito. La simulación permitió comprobar la correcta lectura de los voltajes y su visualización en la pantalla LCD.
+
+#### Simulación en Proteus
+
+![Esquematico](./Practica7/Simulacion.png)
+
+**Archivo de simulación:** 
+[Descargar simulación](./Practica7/base_micro.pdsprj)
+
+### Programación
+
+La programación del PIC16F887 se realizó utilizando MPLAB. Donde se realiza la conversión de las señales analógicas y calcula tanto el voltaje como el porcentaje correspondiente.
+
+**Código en MPLAB:** 
+[Ver código](./Practica7/Voltaje.hex)
+
+### Resultado
+
+Después de realizar las conexiones y cargar el programa en el microcontrolador, se visualizó correctamente el voltaje, el porcentaje y el valor ADC correspondientes a la entrada seleccionada.
+
+#### Resultado físico
+
+![Resultado mediciones LCD](./Practica7/lcd_voltaje.gif)
+
+## Práctica 8: Lectura de Voltaje y Conversión ADC con LCD 
+
+### Descripción
+
+En esta práctica se utilizó el microcontrolador PIC16F887 para realizar la lectura de señales analógicas mediante su convertidor analógico digital (ADC). La información se muestra en una pantalla LCD, permitiendo visualizar el voltaje aplicado, su porcentaje respecto al valor máximo y el valor digital generado por el ADC. Seleccionando cuál de las entradas analógicas se deseaba visualizar.
 
 | Cantidad | Componente |
 |-----------|------------|
@@ -411,7 +519,6 @@ En esta práctica se utilizaron potenciómetros para generar distintos niveles d
 - El porcentaje correspondiente respecto al voltaje de referencia.
 - El valor digital obtenido por el ADC.
 
-
 ### Simulación
 
 Antes de realizar la implementación física, se utilizó Proteus para diseñar y verificar el funcionamiento del circuito. La simulación permitió comprobar la correcta lectura de los voltajes y su visualización en la pantalla LCD.
@@ -420,14 +527,14 @@ Antes de realizar la implementación física, se utilizó Proteus para diseñar 
 
 ![Esquematico](./Practica8/lcdv.png)
 
-**Archivo de simulación:**  
+**Archivo de simulación:** 
 [Descargar simulación](./Practica8/base_micro.pdsprj)
 
 ### Programación
 
 La programación del PIC16F887 se realizó utilizando MPLAB. Donde se realiza la conversión de las señales analógicas y calcula tanto el voltaje como el porcentaje correspondiente.
 
-**Código en MPLAB:**  
+**Código en MPLAB:** 
 [Ver código](./Practica8/Simultaneo.hex)
 
 ### Resultado
@@ -437,8 +544,6 @@ Después de realizar las conexiones y cargar el programa en el microcontrolador,
 #### Resultado físico
 
 ![Resultado mediciones LCD](./Practica8/lcdv.gif)
-
-
 
 #### Firma de Honor:
 Damos nuestra palabra de que hemos realizado esta actividad con integridad académica
