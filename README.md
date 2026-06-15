@@ -1,4 +1,24 @@
-# Microprocesadores
+
+# Laboratorio de Microcontroladores 
+
+Repositorio que contiene las prácticas y proyectos desarrollados durante el curso de Microcontroladores.
+
+## Contenido
+
+| Actividad | Descripción |
+|------------|------------|
+| Práctica 1 | Contador de 6 bits y caminata de LEDs |
+| Práctica 2 | Visualización de letras en matriz de LEDs |
+| Práctica 3 | Display de 7 segmentos y caracteres hexadecimales |
+| Práctica 4 | Contador ascendente y descendente de 0 a 99 |
+| Práctica 5 | Manejo de LCD y caracteres personalizados |
+| Práctica 6 | Lectura ADC y visualización en LCD |
+| Práctica 7 | Lectura de y Conversión ADC con LCD  |
+| Práctica 8 | Lectura de Voltaje y Conversión ADC con LCD |
+| Proyecto 1 | Videojuego controlado por joystick en LCD |
+
+<details>
+<summary><b>Práctica 1 - Contador de 6 Bits y Caminata de LEDs</b></summary>
 
 ## Práctica 1: Contador de 6 Bits y Caminata de LEDs con PIC16F887
 
@@ -83,6 +103,10 @@ Después de cargar el programa en el PIC16F887 y realizar las conexiones corresp
 #### Resultado físico
 
 ![Resultado caminata de LEDs](./Practica1/Caminata.jpeg)
+</details>
+
+<details>
+<summary><b>Práctica 2 - Visualización de Letras en Matriz de LEDs</b></summary>
 
 ## Práctica 2: Visualización de Letras en una Matriz de LEDs con PIC16F887
 
@@ -167,6 +191,11 @@ Una vez cargado el programa en el PIC16F887 y realizadas las conexiones correspo
 
 ![Resultado matriz de leds con 'A', 'N', 'K' e 'I'](./Practica2/ANKI.gif)
 
+</details>
+
+<details>
+<summary><b>Práctica 3 - Display de 7 Segmentos y Caracteres Hexadecimales</b></summary>
+
 ## Práctica 3: Visualización de Números y Caracteres Hexadecimales en un Display de 7 Segmentos con PIC16F887
 
 ### Descripción
@@ -250,6 +279,10 @@ Una vez cargado el programa en el PIC16F887 y realizadas las conexiones correspo
 #### Resultado físico
 
 ![Resultado hexadecimal 0 a F](./Practica2/HEX.gif)
+</details>
+
+<details>
+<summary><b>Práctica 4 - Contador Ascendente y Descendente de 0 a 99</b></summary>
 
 ## Práctica 4: Contador de 0 a 99 controlado con botones utilizando PIC16F887
 
@@ -308,6 +341,11 @@ Después de programar el microcontrolador y realizar las conexiones correspondie
 #### Resultado físico
 
 ![Resultado números del 0 al 99](./Practica4/Contador.gif)
+
+</details>
+
+<details>
+<summary><b>Práctica 5 - Manejo de LCD y Caracteres Personalizados</b></summary>
 
 ## Práctica 5: Contador de 0 a 9999 con/sin boton
 
@@ -372,6 +410,11 @@ Una vez cargado el programa y realizadas las conexiones correspondientes, se mue
 #### Resultado físico
 
 ![Resultado físico](./Practica5/9999.gif)
+
+</details>
+
+<details>
+<summary><b>Práctica 6 - Lectura ADC y Visualización en LCD</b></summary>
 
 ## Práctica 6: Manejo de LCD con PIC16F887
 
@@ -441,6 +484,11 @@ Una vez cargado el programa y realizadas las conexiones correspondientes, se mue
 
 ![Resultado carácter personalizado](./Practica6/lcdc.gif)
 
+</details>
+
+<details>
+<summary><b>Práctica 7 - Lectura de y Conversión ADC con LCD </b></summary>
+
 ## Práctica 7: Lectura de y Conversión ADC con LCD 
 
 ### Descripción
@@ -493,7 +541,12 @@ Después de realizar las conexiones y cargar el programa en el microcontrolador,
 
 ![Resultado mediciones LCD](./Practica7/lcd_voltaje.gif)
 
-## Práctica 8: Lectura de Voltaje y Conversión ADC con LCD 
+</details>
+
+<details>
+<summary><b>Práctica 8 - Lectura de Voltaje y Conversión ADC con LCD </b></summary>
+
+## Práctica 8: Lectura de Voltaje y Conversión ADC con LCD
 
 ### Descripción
 
@@ -544,6 +597,11 @@ Después de realizar las conexiones y cargar el programa en el microcontrolador,
 #### Resultado físico
 
 ![Resultado mediciones LCD](./Practica8/lcdv.gif)
+
+</details>
+
+<details>
+<summary><b>Proyecto 1 - Videojuego Controlado por Joystick en LCD</b></summary>
 
 ## Proyecto 1: Videojuego Controlado por Joystick en LCD
 
@@ -614,3 +672,17 @@ Después de realizar las conexiones y cargar el programa, se obtuvo un videojueg
 
 #### Firma de Honor:
 Damos nuestra palabra de que hemos realizado esta actividad con integridad académica
+
+</details>
+
+
+
+
+
+
+
+
+
+
+
+
