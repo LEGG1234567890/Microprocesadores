@@ -577,7 +577,7 @@ De manera que, el joystick permite controlar el movimiento del personaje en ambo
 - **Eje Y:** permite cambiar entre las líneas de la pantalla.
 - La velocidad de desplazamiento horizontal es directamente proporcional a la inclinación del joystick.
 
- Además, se cuentan con funciones adicionales que permiteen el funcionamiento continuo del personaje:
+ Además, se cuentan con funciones adicionales que permiten el funcionamiento continuo del personaje:
 
 - Al presionar el botón, el personaje cambia temporalmente su apariencia, generando una animación distinta.
 - Cuando el personaje alcanza el extremo derecho de la pantalla, aparece automáticamente en el extremo izquierdo. Logrando el mismo efecto en el lado contrario.
