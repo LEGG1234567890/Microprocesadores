@@ -95,7 +95,7 @@ Después de cargar el programa en el PIC16F887 y realizar las conexiones corresp
 </details>
 
 <details>
-<summary><b>Práctica 2 - Visualización de Letras en Matriz de LEDs</b></summary>
+<summary><b>Práctica 2 -Visualización de Letras en una Matriz de LEDs con PIC16F887</b></summary>
 
 ## Práctica 2: Visualización de Letras en una Matriz de LEDs con PIC16F887
 
@@ -183,7 +183,7 @@ Una vez cargado el programa en el PIC16F887 y realizadas las conexiones correspo
 </details>
 
 <details>
-<summary><b>Práctica 3 - Display de 7 Segmentos y Caracteres Hexadecimales</b></summary>
+<summary><b>Práctica 3 - Visualización de Números y Caracteres Hexadecimales en un Display de 7 Segmentos con PIC16F887</b></summary>
 
 ## Práctica 3: Visualización de Números y Caracteres Hexadecimales en un Display de 7 Segmentos con PIC16F887
 
@@ -271,7 +271,7 @@ Una vez cargado el programa en el PIC16F887 y realizadas las conexiones correspo
 </details>
 
 <details>
-<summary><b>Práctica 4 - Contador Ascendente y Descendente de 0 a 99</b></summary>
+<summary><b>Práctica 4 -  Contador de 0 a 99 controlado con botones utilizando PIC16F887</b></summary>
 
 ## Práctica 4: Contador de 0 a 99 controlado con botones utilizando PIC16F887
 
@@ -334,7 +334,7 @@ Después de programar el microcontrolador y realizar las conexiones correspondie
 </details>
 
 <details>
-<summary><b>Práctica 5 - Manejo de LCD y Caracteres Personalizados</b></summary>
+<summary><b>Práctica 5 - Contador de 0 a 9999 con/sin boton</b></summary>
 
 ## Práctica 5: Contador de 0 a 9999 con/sin boton
 
@@ -403,7 +403,7 @@ Una vez cargado el programa y realizadas las conexiones correspondientes, se mue
 </details>
 
 <details>
-<summary><b>Práctica 6 - Lectura ADC y Visualización en LCD</b></summary>
+<summary><b>Práctica 6 - Manejo de LCD con PIC16F887</b></summary>
 
 ## Práctica 6: Manejo de LCD con PIC16F887
 
@@ -476,9 +476,9 @@ Una vez cargado el programa y realizadas las conexiones correspondientes, se mue
 </details>
 
 <details>
-<summary><b>Práctica 7 - Lectura de y Conversión ADC con LCD </b></summary>
+<summary><b>Práctica 7 - Lectura y Conversión ADC con LCD </b></summary>
 
-## Práctica 7: Lectura de y Conversión ADC con LCD 
+## Práctica 7: Lectura y Conversión ADC con LCD 
 
 ### Descripción
 
