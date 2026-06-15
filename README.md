@@ -5,6 +5,20 @@ Repositorio que contiene las prácticas y proyectos desarrollados durante el cur
 
 ## Contenido
 
+| Actividad | Descripción |
+|------------|------------|
+| Práctica 1 | Contador de 6 bits y caminata de LEDs |
+| Práctica 2 | Visualización de letras en matriz de LEDs |
+| Práctica 3 | Display de 7 segmentos y caracteres hexadecimales |
+| Práctica 4 | Contador ascendente y descendente de 0 a 99 |
+| Práctica 5 | Manejo de LCD y caracteres personalizados |
+| Práctica 6 | Lectura ADC y visualización en LCD |
+| Práctica 7 | [Agregar descripción] |
+| Práctica 8 | [Agregar descripción] |
+| Proyecto 1 | Videojuego controlado por joystick en LCD |
+
+## Contenido
+
 ## Práctica 1: Contador de 6 Bits y Caminata de LEDs con PIC16F887
 
 ### Descripción
