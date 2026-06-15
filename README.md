@@ -545,5 +545,72 @@ Después de realizar las conexiones y cargar el programa en el microcontrolador,
 
 ![Resultado mediciones LCD](./Practica8/lcdv.gif)
 
+## Proyecto 1: Videojuego Controlado por Joystick en LCD
+
+
+### Descripción
+
+En este proyecto se desarrolló un videojuego utilizando el microcontrolador PIC16F887, una pantalla LCD y un joystick. El juego consiste en controlar un personaje personalizado creado el cual pueda desplazarse horizontal y verticalmente utilizando el joystick, además de ejecutar una animación mediante un botón. Controlando la velocidad de desplazamiento variable según la inclinación del joystick y teletransportación entre los extremos de la pantalla.
+
+
+| Cantidad | Componente |
+|-----------|------------|
+| 1 | Pantalla LCD |
+| 1 | Potenciometro 1 kΩ |
+| 1 | Resistencia de 330 Ω |
+| 1 | Resistencia de 1 kΩ |
+| 1 | PIC16F887 |
+| 1 | Push Button |
+| 1 | Joystick |
+| 1 | Cristal de cuarzo de 8 MHz |
+| 1 | Fuente de alimentación de 5 V |
+
+---
+
+### Diseño de personaje y movimiento
+
+El carácter representa al jugador que se desplaza a través de la pantalla durante el videojuego.
+
+De manera que, el joystick permite controlar el movimiento del personaje en ambos ejes de la pantalla LCD:
+
+- **Eje X:** desplaza al personaje horizontalmente.
+- **Eje Y:** permite cambiar entre las líneas de la pantalla.
+- La velocidad de desplazamiento horizontal es directamente proporcional a la inclinación del joystick.
+
+ Además, se cuentan con funciones adicionales que permiteen el funcionamiento continuo del personaje:
+
+- Al presionar el botón, el personaje cambia temporalmente su apariencia, generando una animación distinta.
+- Cuando el personaje alcanza el extremo derecho de la pantalla, aparece automáticamente en el extremo izquierdo. Logrando el mismo efecto en el lado contrario.
+ 
+
+
+### Simulación
+
+Antes de realizar la implementación física, se utilizó Proteus para diseñar y verificar el funcionamiento del videojuego.
+
+#### Simulación en Proteus
+
+![Esquematico](./Proyecto1/Simulacion.png)
+
+**Archivo de simulación:** 
+[Descargar simulación](./Proyecto1/base_micro.pdsprj)
+
+### Programación
+
+La programación del PIC16F887 se realizó utilizando MPLAB. Esto nos permitió controlar el desplazamiento del personaje utilizando las entradas analógicas del joystick, además de asignar las distintas funciones.
+
+
+**Código en MPLAB:** 
+[Ver código](./Proyecto1/juego.hex)
+
+### Resultado
+
+Después de realizar las conexiones y cargar el programa, se obtuvo un videojuego en el que el usuario puede controlar el movimiento del personaje mediante el joystick.
+
+#### Resultado físico
+
+![Videojuego final](./Proyecto1/juego.gif)
+
+
 #### Firma de Honor:
 Damos nuestra palabra de que hemos realizado esta actividad con integridad académica
