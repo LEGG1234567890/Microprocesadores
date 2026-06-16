@@ -594,11 +594,9 @@ Después de realizar las conexiones y cargar el programa en el microcontrolador,
 
 ## Proyecto 1: Videojuego Controlado por Joystick en LCD
 
-
 ### Descripción
 
 En este proyecto se desarrolló un videojuego utilizando el microcontrolador PIC16F887, una pantalla LCD y un joystick. El juego consiste en controlar un personaje personalizado creado el cual pueda desplazarse horizontal y verticalmente utilizando el joystick, además de ejecutar una animación mediante un botón. Controlando la velocidad de desplazamiento variable según la inclinación del joystick y teletransportación entre los extremos de la pantalla.
-
 
 | Cantidad | Componente |
 |-----------|------------|
@@ -628,8 +626,6 @@ De manera que, el joystick permite controlar el movimiento del personaje en ambo
 
 - Al presionar el botón, el personaje cambia temporalmente su apariencia, generando una animación distinta.
 - Cuando el personaje alcanza el extremo derecho de la pantalla, aparece automáticamente en el extremo izquierdo. Logrando el mismo efecto en el lado contrario.
- 
-
 
 ### Simulación
 
@@ -646,8 +642,7 @@ Antes de realizar la implementación física, se utilizó Proteus para diseñar 
 
 La programación del PIC16F887 se realizó utilizando MPLAB. Esto nos permitió controlar el desplazamiento del personaje utilizando las entradas analógicas del joystick, además de asignar las distintas funciones.
 
-
-**Código en MPLAB:** 
+**Código en MPLAB:**
 [Ver código](./Proyecto1/juego.hex)
 
 ### Resultado
@@ -658,20 +653,72 @@ Después de realizar las conexiones y cargar el programa, se obtuvo un videojueg
 
 ![Videojuego final](./Proyecto1/juego.gif)
 
-
 #### Firma de Honor:
 Damos nuestra palabra de que hemos realizado esta actividad con integridad académica
 
 </details>
 
+<details>
+<summary><b>Práctica 9: Contador y Lectura de Voltaje</b></summary>
 
+## Práctica 9: Contador y Lectura de Voltaje
 
+### Descripción
 
+En esta práctica se utilizó el microcontrolador PIC16F887 para realizar un contador mediante interrupciones. El cual se mostrara en una pantalla LCD, asimismo la siguiente etapa consistio en poder visualizar el voltaje aplicado en un potenciomtro.
 
+| Cantidad | Componente |
+|-----------|------------|
+| 1 | Pantalla LCD |
+| 2 | Potenciometro 1 kΩ |
+| 1 | Resistencia de 330 Ω |
+| 1 | Resistencia de 1 kΩ |
+| 1 | PIC16F887 |
+| 1 | Push Button |
+| 1 | Cristal de cuarzo de 8 MHz |
+| 1 | Fuente de alimentación de 5 V |
 
+---
 
+### Contador
 
+Para poder realizar un contador interno se utilizo un [codigo de MATLAB](./Practica9/Timer0_2025.mlx), el cual nos permite configurar el PIC16F887 para poder medir los ciclos de nuestro oscilador para asi determinar el tiempo transcurrido.
 
+**Código en MPLAB:** 
+[Ver código](./Practica9/Contador.hex)
 
+### Lectura de Voltaje
 
+Se utilio un potenciómetro para generar distintos niveles de voltaje en la entrada analógicas del microcontrolador. Realizando la conversión analógico-digital y así mostrar en la pantalla LCD.
 
+**Código en MPLAB:** 
+[Ver código](./Practica9/Voltaje.hex)
+
+### Simulación
+
+Antes de realizar la implementación física, se utilizó Proteus para diseñar y verificar el funcionamiento del programa.
+
+#### Simulación en Proteus
+
+![Esquematico](./Practica9/Simulacion.png)
+
+**Archivo de simulación:** 
+[Descargar simulación](./Practica9/base_micro.pdsprj)
+
+### Programación
+
+La programación del PIC16F887 se realizó utilizando MPLAB. Esto nos permitió contar los ciclos ocuuridos en cierto tiempo para asi tener una estimacion del tiempo ocurrido, esto se hizo mediante interrupciones internas que ocurrieron en el PIC16F887. Asimismo se realiza la conversión de la señal analógica y se calcula el voltaje.
+
+### Resultado
+
+Después de realizar las conexiones y cargar el programa, se obtuvo la lectura del voltaje y al mismo tiempo el tiempo de ejecucción.
+
+#### Resultado físico
+
+![Circuito final](./Practica9/circuito.gif)
+
+</details>
+
+#### Firma de Honor:
+
+Damos nuestra palabra de que hemos realizado esta actividad con integridad académica
