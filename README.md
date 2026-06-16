@@ -1,5 +1,14 @@
-# Microprocesadores
 
+# Laboratorio de Microcontroladores 
+
+Repositorio que contiene las prácticas y proyectos desarrollados durante el curso de Microcontroladores.
+
+
+## Contenido
+
+<details>
+<summary><b>Práctica 1 -  Contador de 6 Bits y Caminata de LEDs con PIC16F887</b></summary>
+ 
 ## Práctica 1: Contador de 6 Bits y Caminata de LEDs con PIC16F887
 
 ### Descripción
@@ -83,6 +92,10 @@ Después de cargar el programa en el PIC16F887 y realizar las conexiones corresp
 #### Resultado físico
 
 ![Resultado caminata de LEDs](./Practica1/Caminata.jpeg)
+</details>
+
+<details>
+<summary><b>Práctica 2 -Visualización de Letras en una Matriz de LEDs con PIC16F887</b></summary>
 
 ## Práctica 2: Visualización de Letras en una Matriz de LEDs con PIC16F887
 
@@ -167,6 +180,11 @@ Una vez cargado el programa en el PIC16F887 y realizadas las conexiones correspo
 
 ![Resultado matriz de leds con 'A', 'N', 'K' e 'I'](./Practica2/ANKI.gif)
 
+</details>
+
+<details>
+<summary><b>Práctica 3 - Visualización de Números y Caracteres Hexadecimales en un Display de 7 Segmentos con PIC16F887</b></summary>
+
 ## Práctica 3: Visualización de Números y Caracteres Hexadecimales en un Display de 7 Segmentos con PIC16F887
 
 ### Descripción
@@ -250,6 +268,10 @@ Una vez cargado el programa en el PIC16F887 y realizadas las conexiones correspo
 #### Resultado físico
 
 ![Resultado hexadecimal 0 a F](./Practica2/HEX.gif)
+</details>
+
+<details>
+<summary><b>Práctica 4 -  Contador de 0 a 99 controlado con botones utilizando PIC16F887</b></summary>
 
 ## Práctica 4: Contador de 0 a 99 controlado con botones utilizando PIC16F887
 
@@ -308,6 +330,11 @@ Después de programar el microcontrolador y realizar las conexiones correspondie
 #### Resultado físico
 
 ![Resultado números del 0 al 99](./Practica4/Contador.gif)
+
+</details>
+
+<details>
+<summary><b>Práctica 5 - Contador de 0 a 9999 con/sin boton</b></summary>
 
 ## Práctica 5: Contador de 0 a 9999 con/sin boton
 
@@ -372,6 +399,11 @@ Una vez cargado el programa y realizadas las conexiones correspondientes, se mue
 #### Resultado físico
 
 ![Resultado físico](./Practica5/9999.gif)
+
+</details>
+
+<details>
+<summary><b>Práctica 6 - Manejo de LCD con PIC16F887</b></summary>
 
 ## Práctica 6: Manejo de LCD con PIC16F887
 
@@ -441,7 +473,12 @@ Una vez cargado el programa y realizadas las conexiones correspondientes, se mue
 
 ![Resultado carácter personalizado](./Practica6/lcdc.gif)
 
-## Práctica 7: Lectura de y Conversión ADC con LCD 
+</details>
+
+<details>
+<summary><b>Práctica 7 - Lectura y Conversión ADC con LCD </b></summary>
+
+## Práctica 7: Lectura y Conversión ADC con LCD 
 
 ### Descripción
 
@@ -493,7 +530,12 @@ Después de realizar las conexiones y cargar el programa en el microcontrolador,
 
 ![Resultado mediciones LCD](./Practica7/lcd_voltaje.gif)
 
-## Práctica 8: Lectura de Voltaje y Conversión ADC con LCD 
+</details>
+
+<details>
+<summary><b>Práctica 8 - Lectura de Voltaje y Conversión ADC con LCD </b></summary>
+
+## Práctica 8: Lectura de Voltaje y Conversión ADC con LCD
 
 ### Descripción
 
@@ -545,5 +587,91 @@ Después de realizar las conexiones y cargar el programa en el microcontrolador,
 
 ![Resultado mediciones LCD](./Practica8/lcdv.gif)
 
+</details>
+
+<details>
+<summary><b>Proyecto 1 - Videojuego Controlado por Joystick en LCD</b></summary>
+
+## Proyecto 1: Videojuego Controlado por Joystick en LCD
+
+
+### Descripción
+
+En este proyecto se desarrolló un videojuego utilizando el microcontrolador PIC16F887, una pantalla LCD y un joystick. El juego consiste en controlar un personaje personalizado creado el cual pueda desplazarse horizontal y verticalmente utilizando el joystick, además de ejecutar una animación mediante un botón. Controlando la velocidad de desplazamiento variable según la inclinación del joystick y teletransportación entre los extremos de la pantalla.
+
+
+| Cantidad | Componente |
+|-----------|------------|
+| 1 | Pantalla LCD |
+| 1 | Potenciometro 1 kΩ |
+| 1 | Resistencia de 330 Ω |
+| 1 | Resistencia de 1 kΩ |
+| 1 | PIC16F887 |
+| 1 | Push Button |
+| 1 | Joystick |
+| 1 | Cristal de cuarzo de 8 MHz |
+| 1 | Fuente de alimentación de 5 V |
+
+---
+
+### Diseño de personaje y movimiento
+
+El carácter representa al jugador que se desplaza a través de la pantalla durante el videojuego.
+
+De manera que, el joystick permite controlar el movimiento del personaje en ambos ejes de la pantalla LCD:
+
+- **Eje X:** desplaza al personaje horizontalmente.
+- **Eje Y:** permite cambiar entre las líneas de la pantalla.
+- La velocidad de desplazamiento horizontal es directamente proporcional a la inclinación del joystick.
+
+ Además, se cuentan con funciones adicionales que permiten el funcionamiento continuo del personaje:
+
+- Al presionar el botón, el personaje cambia temporalmente su apariencia, generando una animación distinta.
+- Cuando el personaje alcanza el extremo derecho de la pantalla, aparece automáticamente en el extremo izquierdo. Logrando el mismo efecto en el lado contrario.
+ 
+
+
+### Simulación
+
+Antes de realizar la implementación física, se utilizó Proteus para diseñar y verificar el funcionamiento del videojuego.
+
+#### Simulación en Proteus
+
+![Esquematico](./Proyecto1/Simulacion.png)
+
+**Archivo de simulación:** 
+[Descargar simulación](./Proyecto1/base_micro.pdsprj)
+
+### Programación
+
+La programación del PIC16F887 se realizó utilizando MPLAB. Esto nos permitió controlar el desplazamiento del personaje utilizando las entradas analógicas del joystick, además de asignar las distintas funciones.
+
+
+**Código en MPLAB:** 
+[Ver código](./Proyecto1/juego.hex)
+
+### Resultado
+
+Después de realizar las conexiones y cargar el programa, se obtuvo un videojuego en el que el usuario puede controlar el movimiento del personaje mediante el joystick.
+
+#### Resultado físico
+
+![Videojuego final](./Proyecto1/juego.gif)
+
+
 #### Firma de Honor:
 Damos nuestra palabra de que hemos realizado esta actividad con integridad académica
+
+</details>
+
+
+
+
+
+
+
+
+
+
+
+
