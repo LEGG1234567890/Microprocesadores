@@ -657,7 +657,7 @@ Después de realizar las conexiones y cargar el programa, se obtuvo un videojueg
 </details>
 
 <details>
-<summary><b>Práctica 9: Contador y Lectura de Voltaje</b></summary>
+<summary><b>Práctica 9 - Contador y Lectura de Voltaje</b></summary>
 
 ## Práctica 9: Contador y Lectura de Voltaje
 
@@ -759,6 +759,8 @@ Antes de realizar la implementación física, se utilizó Proteus para comprobar
 
 La programación del PIC16F887 se realizó utilizando MPLAB, configurando el temporizador interno del microcontrolador y actualizar continuamente la información en la pantalla LCD.
 
+**Código en MPLAB:** 
+[Ver código](./Practica10/Contador.hex)
 
 ### Resultado
 
@@ -787,6 +789,9 @@ Antes de realizar la implementación física, se utilizó Proteus para comprobar
 
 La programación se realizó en MPLAB configurando el módulo ADC del PIC16F887 para leer el voltaje del potenciómetro y mostrar su valor junto con el timer en la pantalla LCD.
 
+**Código en MPLAB:** 
+[Ver código](./Practica10/Voltaje.hex)
+
 
 ### Resultado
 
@@ -795,6 +800,58 @@ Una vez cargado el programa y realizadas las conexiones correspondientes, se log
 #### Resultado físico
 
 ![Circuito final](./Practica10/b.gif)
+
+</details>
+
+<details> <summary><b>Práctica 11 - Control de Intensidad de LEDs mediante PWM por Hardware y Software con PIC16F887</b></summary>
+
+### Descripción
+
+En esta práctica se utilizó el microcontrolador PIC16F887 para controlar la intensidad luminosa de dos LEDs mediante la técnica de Modulación por Ancho de Pulso (PWM) con dos métodos distintos: PWM por hardware y PWM por software.
+
+
+| Cantidad | Componente |
+|-----------|------------|
+| 2 | LEDs |
+| 1 | Resistencia de 1 kΩ |
+| 2 | Potenciómetros |
+| 1 | PIC16F887 |
+| 1 | Push Button |
+| 1 | Cristal de cuarzo de 8 MHz |
+| 1 | Fuente de alimentación de 5 V |
+
+
+---
+
+
+En esta primera actividad se configuró el módulo CCP del microcontrolador para generar una señal PWM por hardware, asi La intensidad del LED varía de acuerdo con la posición del potenciómetro al modificar automáticamente el duty cycle de la señal PWM.
+
+### Simulación
+
+Antes de realizar la implementación física, se utilizó Proteus para comprobar que la intensidad del LED cambiara de forma proporcional al movimiento del potenciómetro.
+
+#### Simulación en Proteus
+
+![Esquematico](./Practica11/led_p.png)
+
+**Archivo de simulación:** 
+[Descargar simulación](./Practica11/base_micro.pdsprj)
+
+### Programación
+
+La programación del PIC16F887 se realizó utilizando MPLAB para configurar el módulo CCP para generar la señal PWM por hardware y ajustar el Duty Cycle con base al potenciómetro.
+
+**Código en MPLAB:** 
+[Ver código](./Practica11/PWM.hex)
+
+
+### Resultado
+
+Después de realizar las conexiones y cargar el programa, se obtuvo control de la intensidad del LED mediante PWM por hardware.
+
+#### Resultado físico
+
+![Circuito final](./Practica11/led.gif)
 
 </details>
 
