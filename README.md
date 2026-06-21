@@ -718,7 +718,7 @@ Después de realizar las conexiones y cargar el programa, se obtuvo la lectura d
 </details>
 
 <details>
-<summary><b>Práctica 10 - Timer y Lectura de Voltaje en LCD con PIC16F887</b></summary>
+<summary><b>Práctica 10 - Timer y Lectura de Voltaje en LCD</b></summary>
 
 ### Descripción
 
@@ -803,7 +803,7 @@ Una vez cargado el programa y realizadas las conexiones correspondientes, se log
 
 </details>
 
-<details> <summary><b>Práctica 11 - Control de Intensidad de LEDs mediante PWM por Hardware y Software con PIC16F887</b></summary>
+<details> <summary><b>Práctica 11 - Control de Intensidad de LEDs mediante PWM por Hardware y Software </b></summary>
 
 ### Descripción
 
