@@ -719,6 +719,87 @@ Después de realizar las conexiones y cargar el programa, se obtuvo la lectura d
 
 </details>
 
+<details>
+<summary><b>Práctica 10 - Timer y Lectura de Voltaje en LCD con PIC16F887</b></summary>
+
+### Descripción
+
+En esta práctica se utilizó el microcontrolador PIC16F887 y una pantalla LCD.  
+En la primera actividad se implementó un timer, y posteriormente en la segunda actividad se integró la lectura de voltaje utilizando un potenciómetro, mostrando ambos valores en la LCD.
+
+
+| Cantidad | Componente |
+|-----------|------------|
+| 1 | Pantalla LCD |
+| 1 | Resistencia de 1 kΩ |
+| 1 | Potenciómetro |
+| 1 | PIC16F887 |
+| 1 | Push Button |
+| 1 | Cristal de cuarzo de 8 MHz |
+| 1 | Fuente de alimentación de 5 V |
+
+
+---
+
+### Timer en LCD
+
+En esta primera actividad se programó el microcontrolador para generar un conteo de tiempo, el cual se mostró en la pantalla LCD en tiempo real.
+
+
+### Simulación
+
+Antes de realizar la implementación física, se utilizó Proteus para comprobar que el timer se mostrara correctamente en la pantalla LCD y que el conteo se actualizara de forma continua.
+
+#### Simulación en Proteus
+
+![Esquematico](./Practica10/Simulacion_a.png)
+
+**Archivo de simulación:** 
+[Descargar simulación](./Practica10/base_micro.pdsprj)
+
+### Programación
+
+La programación del PIC16F887 se realizó utilizando MPLAB, configurando el temporizador interno del microcontrolador y actualizar continuamente la información en la pantalla LCD.
+
+
+### Resultado
+
+Después de realizar las conexiones y cargar el programa, se obtuvo un timer que muestra el tiempo en la pantalla LCD.
+
+#### Resultado físico
+
+![Circuito final](./Practica10/a.gif)
+
+### Lectura de Voltaje con Timer
+
+En esta actividad se utilizó un potenciómetro para generar una señal analógica variable, para así mostrar el valor del voltaje en la pantalla LCD, manteniendo al mismo tiempo el timer en funcionamiento.
+
+### Simulación
+
+Antes de realizar la implementación física, se utilizó Proteus para comprobar que el timer se mostrara correctamente en la pantalla LCD y la correcta la lectura del voltaje.
+
+#### Simulación en Proteus
+
+![Esquematico](./Practica10/Simulacion_b.png)
+
+**Archivo de simulación:** 
+[Descargar simulación](./Practica10/base_micro.pdsprj)
+
+### Programación
+
+La programación se realizó en MPLAB configurando el módulo ADC del PIC16F887 para leer el voltaje del potenciómetro y mostrar su valor junto con el timer en la pantalla LCD.
+
+
+### Resultado
+
+Una vez cargado el programa y realizadas las conexiones correspondientes, se logró visualizar correctamente el voltaje  y el timer funcionando simultáneamente.
+
+#### Resultado físico
+
+![Circuito final](./Practica10/b.gif)
+
+</details>
+
 #### Firma de Honor:
 
 Damos nuestra palabra de que hemos realizado esta actividad con integridad académica
