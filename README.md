@@ -653,8 +653,6 @@ Después de realizar las conexiones y cargar el programa, se obtuvo un videojueg
 
 ![Videojuego final](./Proyecto1/juego.gif)
 
-#### Firma de Honor:
-Damos nuestra palabra de que hemos realizado esta actividad con integridad académica
 
 </details>
 
