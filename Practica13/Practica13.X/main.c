@@ -12,13 +12,15 @@
 
 #define _XTAL_FREQ 8000000
 #define PWM_PERIOD  20
-#define MOTOR RC2         // ? Mismo pin que usaría CCP1
 
-volatile uint8_t contador = 0, pwm_duty = 0;
+#define MOTOR RC2
+#define IN1   RD0
+#define IN2   RD1
 
-//=============================================================================
-// ADC
-//=============================================================================
+volatile uint8_t contador = 0;
+volatile uint8_t pwm_duty = 0;
+volatile uint8_t lado     = 0;
+
 void ADC_Init(void) {
     ANSEL  = 0x01;
     ANSELH = 0x00;
@@ -35,20 +37,14 @@ uint16_t ADC_Read(uint8_t channel) {
     return ((uint16_t)ADRESH << 8) | ADRESL;
 }
 
-//=============================================================================
-// TIMER0
-//=============================================================================
 void Timer0_Init(void) {
-    OPTION_REG = 0x01;          // Prescaler 1:4
-    TMR0 = 246;                 // 256-10 = 246 ? tick cada ~5µs
+    TMR0 = 246;
     T0IE = 1;
     GIE  = 1;
 }
 
-//=============================================================================
-// ISR
-//=============================================================================
 void __interrupt() ISR(void) {
+
     if (T0IF) {
         MOTOR = (contador < pwm_duty) ? 1 : 0;
         contador++;
@@ -57,15 +53,33 @@ void __interrupt() ISR(void) {
         TMR0 = 246;
         T0IF = 0;
     }
+
+    if (INTF) {
+        lado = !lado;
+        if (lado) {
+            IN1 = 0;
+            IN2 = 1;
+        } else {
+            IN1 = 1;
+            IN2 = 0;
+        }
+        INTF = 0;
+    }
 }
 
-//=============================================================================
-// MAIN
-//=============================================================================
 void main(void) {
+    TRISD = 0x00;
+    PORTD = 0x00;
     TRISC = 0x00;
     PORTC = 0x00;
+    TRISB = 0x01;
     ADC_Init();
+    IN1 = 1;
+    IN2 = 0;
+    OPTION_REG = 0b00000001;
+    INTF = 0;
+    INTE = 1;
+    GIE  = 1;
     Timer0_Init();
     uint16_t adc_val;
     while (1) {
@@ -73,6 +87,5 @@ void main(void) {
         GIE = 0;
         pwm_duty = (uint8_t)((uint32_t)adc_val * 20UL / 1023UL);
         GIE = 1;
-        __delay_ms(10);
     }
 }

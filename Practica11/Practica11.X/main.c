@@ -16,9 +16,8 @@
 #define LED2 RD1
 #define PWM_PERIOD 20
 
-volatile uint8_t  contador = 0, pwm1 = 0, pwm2 = 0;  // ? uint8_t es suficiente (0-20)
+volatile uint8_t  contador = 0, pwm1 = 0, pwm2 = 0;
 
-//-----------------------------------------------------------------------------
 void ADC_Init(void) {
     ANSEL  = 0x03;
     ANSELH = 0x00;
@@ -35,7 +34,6 @@ uint16_t ADC_Read(uint8_t channel) {
     return ((uint16_t)ADRESH << 8) | ADRESL;
 }
 
-//-----------------------------------------------------------------------------
 void Timer0_Init(void) {
     OPTION_REG = 0x01;
     TMR0 = 240;
@@ -43,7 +41,6 @@ void Timer0_Init(void) {
     GIE  = 1;
 }
 
-//-----------------------------------------------------------------------------
 void __interrupt() ISR(void) {
     if (T0IF) {
         LED1 = (contador < pwm1) ? 1 : 0;
@@ -56,7 +53,6 @@ void __interrupt() ISR(void) {
     }
 }
 
-//-----------------------------------------------------------------------------
 void main(void) {
     TRISD = 0x00;
     PORTD = 0x00;
