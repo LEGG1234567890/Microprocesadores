@@ -652,7 +652,6 @@ Después de realizar las conexiones y cargar el programa, se obtuvo un videojueg
 
 ![Videojuego final](./Proyecto1/juego.gif)
 
-
 </details>
 
 <details>
@@ -723,7 +722,6 @@ Después de realizar las conexiones y cargar el programa, se obtuvo la lectura d
 
 En esta práctica se utilizó el microcontrolador PIC16F887 y una pantalla LCD. En la primera actividad se implementó un timer, y posteriormente en la segunda actividad se integró la lectura de voltaje utilizando un potenciómetro, mostrando ambos valores en la LCD.
 
-
 | Cantidad | Componente |
 |-----------|------------|
 | 1 | Pantalla LCD |
@@ -734,13 +732,11 @@ En esta práctica se utilizó el microcontrolador PIC16F887 y una pantalla LCD. 
 | 1 | Cristal de cuarzo de 8 MHz |
 | 1 | Fuente de alimentación de 5 V |
 
-
 ---
 
 ### Timer en LCD
 
 En esta primera actividad se programó el microcontrolador para generar un conteo de tiempo, el cual se mostró en la pantalla LCD en tiempo real.
-
 
 ### Simulación
 
@@ -790,7 +786,6 @@ La programación se realizó en MPLAB configurando el módulo ADC del PIC16F887 
 **Código en MPLAB:** 
 [Ver código](./Practica10/Voltaje.hex)
 
-
 ### Resultado
 
 Una vez cargado el programa y realizadas las conexiones correspondientes, se logró visualizar correctamente el voltaje  y el timer funcionando simultáneamente.
@@ -808,7 +803,6 @@ Una vez cargado el programa y realizadas las conexiones correspondientes, se log
 
 En esta práctica se utilizó el microcontrolador PIC16F887 para controlar la intensidad luminosa de dos LEDs mediante la técnica de Modulación por Ancho de Pulso (PWM) con dos métodos distintos: PWM por hardware y PWM por software.
 
-
 | Cantidad | Componente |
 |-----------|------------|
 | 2 | LEDs |
@@ -819,9 +813,7 @@ En esta práctica se utilizó el microcontrolador PIC16F887 para controlar la in
 | 1 | Cristal de cuarzo de 8 MHz |
 | 1 | Fuente de alimentación de 5 V |
 
-
 ---
-
 
 En esta primera actividad se configuró el módulo CCP del microcontrolador para generar una señal PWM por hardware, asi La intensidad del LED varía de acuerdo con la posición del potenciómetro al modificar automáticamente el duty cycle de la señal PWM.
 
@@ -843,7 +835,6 @@ La programación del PIC16F887 se realizó utilizando MPLAB para configurar el m
 **Código en MPLAB:** 
 [Ver código](./Practica11/PWM.hex)
 
-
 ### Resultado
 
 Después de realizar las conexiones y cargar el programa, se obtuvo control de la intensidad del LED mediante PWM por hardware.
@@ -861,7 +852,6 @@ Después de realizar las conexiones y cargar el programa, se obtuvo control de l
 
 En esta práctica se implementaron dos aplicaciones utilizando el microcontrolador PIC16F887, una pantalla LCD y un teclado matricial 4x4. En la primera actividad se desarrolló un sistema que muestra en la LCD los caracteres presionados en el teclado matricial. Posteriormente, se implementó una calculadora básica capaz de realizar operaciones de suma, resta, multiplicación y división entre dos números ingresados.
 
-
 | Cantidad | Componente |
 |-----------|------------|
 | 1 | Pantalla LCD | 
@@ -871,7 +861,6 @@ En esta práctica se implementaron dos aplicaciones utilizando el microcontrolad
 | 1 | Push Button |
 | 1 | Cristal de cuarzo de 8 MHz |
 | 1 | Fuente de alimentación de 5 V |
-
 
 ---
 
@@ -948,14 +937,12 @@ Después de cargar el programa en el microcontrolador y realizar las conexiones 
 
 </details>
 
-
 <details> 
  <summary><b>Práctica 13 - Control de Velocidad y Sentido de Giro de un Motor DC</b></summary>
 
 ### Descripción
 
 En esta práctica se implementaron dos aplicaciones utilizando el microcontrolador PIC16F887 para controlar un motor de corriente directa (DC). En la primera actividad se controló la velocidad del motor mediante un circuito driver basado en un transistor BJT y una señal PWM. Posteriormente, en la segunda actividad se utilizó un Puente H para controlar tanto la velocidad como el sentido de giro del motor.
-
 
 | Cantidad | Componente |
 |-----------|------------|
@@ -968,7 +955,6 @@ En esta práctica se implementaron dos aplicaciones utilizando el microcontrolad
 | 1 | Puente H |
 | 1 | Cristal de cuarzo de 8 MHz |
 | 1 | Fuente de alimentación de 5 V |
-
 
 ---
 
@@ -994,7 +980,6 @@ La programación del PIC16F887 se realizó utilizando MPLAB, encargado de ajusta
 **Código en MPLAB:** 
 [Ver código](./Practica13/Velocidad.hex)
 
-
 ### Resultado
 
 Después de cargar el programa en el microcontrolador y realizar las conexiones correspondientes, se logró visualizar un control de la velocidad del motor.
@@ -1006,7 +991,6 @@ Después de cargar el programa en el microcontrolador y realizar las conexiones 
 ## Actividad 2: Control de Giro y Velocidad mediante Puente H
 
 En esta segunda actividad se empleó un Puente H para controlar el motor DC. Además de variar la velocidad mediante PWM, para asi invertir el sentido de giro del motor utilizando un botón de control. 
-
 
 ### Simulación
 
@@ -1026,7 +1010,6 @@ La programación se realizó en MPLAB implementando la lógica necesaria para ge
 **Código en MPLAB:** 
 [Ver código](./Practica13/Sentido.hex)
 
-
 ### Resultado
 
 Una vez cargado el programa y realizadas las conexiones correspondientes, se logró controlar correctamente la velocidad y el sentido de giro del motor DC mediante el Puente H.
@@ -1035,6 +1018,139 @@ Una vez cargado el programa y realizadas las conexiones correspondientes, se log
 
 ![Circuito final](./Practica13/pos.gif)
 
+</details>
+
+<details> 
+ <summary><b>Práctica 14 - Servomotor</b></summary>
+
+### Descripción
+
+En esta práctica se implementaron dos aplicaciones utilizando el microcontrolador PIC16F887 para controlar un servomotor. En la primera actividad se controlo para que fuera de 0° a 180° y vicerversa. Posteriormente, en la segunda actividad se utilizó un potenciometro para controlar la posicion ángular.
+
+| Cantidad | Componente |
+|-----------|------------|
+| 1 | Motor DC | 
+| 1 | Potenciómetro |
+| 1 | Resistencia de 1 kΩ | 
+| 1 | PIC16F887 |
+| 1 | Push Button |
+| 1 | Servomotor |
+| 1 | Cristal de cuarzo de 8 MHz |
+| 1 | Fuente de alimentación de 5 V |
+
+---
+
+## Actividad 1: 0° a 180°
+
+En esta primera actividad se utilizó unicamente el servomotor, con el objetivo de que fuera de 0° a 180° y vicerversa. Para lograr esto se modifico el codigo de la practica pasada para tener mayor contral de la señal de PWM.
+
+### Simulación
+
+Antes de realizar la implementación física, se utilizó Proteus para comprobar el control del servomotor.
+
+#### Simulación en Proteus
+
+![Esquematico](./Practica14/Simulacion.png)
+
+**Archivo de simulación:** 
+[Descargar simulación](./Practica14/base_micro.pdsprj)
+
+### Programación
+
+La programación del PIC16F887 se realizó utilizando MPLAB, encargado de ajustar automáticamente el Duty Cycle el cual determina la posicon ángular.
+
+**Código en MPLAB:** 
+[Ver código](./Practica14/VaViene.hex)
+
+### Resultado
+
+Después de cargar el programa en el microcontrolador y realizar las conexiones correspondientes, se logró hacer que vaya de 0° a 180° y vicerversa.
+
+#### Resultado físico
+
+![Circuito final](./Practica14/a.gif)
+
+## Actividad 2: Control de posición angular
+
+En esta segunda actividad se añadio el potenciometro el cual va a ser leido por el PIC16F887 para determinar la posición angular de la misma para posteriormente enviarle lo mismo al servomotor. 
+
+### Simulación
+
+Antes de realizar la implementación física, se utilizó Proteus para observar como mediante el potenciometro logramos hacer que el servomotor llegue a la misma posición ángular.
+
+#### Simulación en Proteus
+
+![Esquematico](./Practica12/Simulacion_b.png)
+
+**Archivo de simulación:** 
+[Descargar simulación](./Practica13/base_micro.pdsprj)
+
+### Programación
+
+La programación se realizó en MPLAB implementando la lógica necesaria para generar la señal PWM acorde al voltaje leido del potenciometro.
+
+**Código en MPLAB:** 
+[Ver código](./Practica14/Posicion.hex)
+
+### Resultado
+
+Una vez cargado el programa y realizadas las conexiones correspondientes, se logró controlar el servomotor mediante el potenciometro.
+
+#### Resultado físico
+
+![Circuito final](./Practica14/b.gif)
+
+</details>
+
+<details> 
+ <summary><b>Práctica 15 - Comunicación</b></summary>
+
+### Descripción
+
+En esta práctica se uso dos PIC16F887 para poder prender un led mediante un boton, esto se hara mediante uno de los distintos tipos de comunicación que existen.
+
+| Cantidad | Componente |
+|-----------|------------|
+| 1 | Resistencia de 330 Ω | 
+| 1 | LED |
+| 2 | Resistencia de 1 kΩ | 
+| 2 | PIC16F887 |
+| 3 | Push Button |
+| 2 | Cristal de cuarzo de 8 MHz |
+| 1 | Fuente de alimentación de 5 V |
+
+---
+
+## Actividad:
+
+La comunicación propuesta es en Serie mediante un maestro y esclavo de manera unilateral, el maestro recibe la señal del boton y se la manda al esclavo para encender el led.
+
+### Simulación
+
+Antes de realizar la implementación física, se utilizó Proteus para comprobar la comunicación entre los PIC's.
+
+#### Simulación en Proteus
+
+![Esquematico](./Practica15/Simulacion.png)
+
+**Archivo de simulación:** 
+[Descargar simulación](./Practica15/base_micro.pdsprj)
+
+### Programación
+
+La programación de los PIC16F887 se realizó utilizando MPLAB, mediante dos codigos (Maestro y Esclavo).
+
+**Código en MPLAB:** 
+[Ver código (Maestro)](./Practica15/Nuestro.hex)
+[Ver código (Esclavo)](./Practica15/Suyo.hex)
+
+### Resultado
+
+Después de cargar los programas en cada microcontrolador y realizar las conexiones correspondientes, se logró hacer la comunicación entre los PIC's.
+
+#### Resultado físico
+
+![Circuito final](./Practica15/Circuito.gif)
 
 </details>
 
