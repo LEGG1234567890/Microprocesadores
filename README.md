@@ -1039,6 +1039,7 @@ Una vez cargado el programa y realizadas las conexiones correspondientes, se log
 
 
 </details>
+
 #### Firma de Honor:
 
 Damos nuestra palabra de que hemos realizado esta actividad con integridad académica
