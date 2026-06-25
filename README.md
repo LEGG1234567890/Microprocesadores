@@ -7,9 +7,9 @@ Repositorio que contiene las prácticas y proyectos desarrollados durante el cur
 ## Contenido
 
 <details>
-<summary><b>Práctica 1 -  Contador de 6 Bits y Caminata de LEDs con PIC16F887</b></summary>
+<summary><b>Práctica 1 -  Contador de 6 Bits y Caminata de LEDs</b></summary>
  
-## Práctica 1: Contador de 6 Bits y Caminata de LEDs con PIC16F887
+## Práctica 1: Contador de 6 Bits y Caminata de LEDs 
 
 ### Descripción
 
@@ -95,10 +95,9 @@ Después de cargar el programa en el PIC16F887 y realizar las conexiones corresp
 </details>
 
 <details>
-<summary><b>Práctica 2 -Visualización de Letras en una Matriz de LEDs con PIC16F887</b></summary>
+<summary><b>Práctica 2 -Visualización de Letras en una Matriz de LEDs</b></summary>
 
-## Práctica 2: Visualización de Letras en una Matriz de LEDs con PIC16F887
-
+## Práctica 2: Visualización de Letras en una Matriz de LEDs
 ### Descripción
 
 En esta práctica se utilizó el microcontrolador PIC16F887 para controlar una matriz de LEDs y mostrar diferentes letras mediante programación.
@@ -183,9 +182,9 @@ Una vez cargado el programa en el PIC16F887 y realizadas las conexiones correspo
 </details>
 
 <details>
-<summary><b>Práctica 3 - Visualización de Números y Caracteres Hexadecimales en un Display de 7 Segmentos con PIC16F887</b></summary>
+<summary><b>Práctica 3 - Visualización de Números y Caracteres Hexadecimales en un Display de 7 Segmentos</b></summary>
 
-## Práctica 3: Visualización de Números y Caracteres Hexadecimales en un Display de 7 Segmentos con PIC16F887
+## Práctica 3: Visualización de Números y Caracteres Hexadecimales en un Display de 7 Segmentos 
 
 ### Descripción
 
@@ -271,9 +270,9 @@ Una vez cargado el programa en el PIC16F887 y realizadas las conexiones correspo
 </details>
 
 <details>
-<summary><b>Práctica 4 -  Contador de 0 a 99 controlado con botones utilizando PIC16F887</b></summary>
+<summary><b>Práctica 4 -  Contador de 0 a 99 controlado con botones</b></summary>
 
-## Práctica 4: Contador de 0 a 99 controlado con botones utilizando PIC16F887
+## Práctica 4: Contador de 0 a 99 controlado con botones utilizando 
 
 ### Descripción
 
@@ -722,8 +721,7 @@ Después de realizar las conexiones y cargar el programa, se obtuvo la lectura d
 
 ### Descripción
 
-En esta práctica se utilizó el microcontrolador PIC16F887 y una pantalla LCD.  
-En la primera actividad se implementó un timer, y posteriormente en la segunda actividad se integró la lectura de voltaje utilizando un potenciómetro, mostrando ambos valores en la LCD.
+En esta práctica se utilizó el microcontrolador PIC16F887 y una pantalla LCD. En la primera actividad se implementó un timer, y posteriormente en la segunda actividad se integró la lectura de voltaje utilizando un potenciómetro, mostrando ambos valores en la LCD.
 
 
 | Cantidad | Componente |
@@ -802,8 +800,9 @@ Una vez cargado el programa y realizadas las conexiones correspondientes, se log
 ![Circuito final](./Practica10/b.gif)
 
 </details>
-
-<details> <summary><b>Práctica 11 - Control de Intensidad de LEDs mediante PWM por Hardware y Software </b></summary>
+ 
+<details>
+<summary><b>Práctica 11 - Control de Intensidad de LEDs mediante PWM por Hardware y Software </b></summary>
 
 ### Descripción
 
@@ -852,6 +851,190 @@ Después de realizar las conexiones y cargar el programa, se obtuvo control de l
 #### Resultado físico
 
 ![Circuito final](./Practica11/led.gif)
+
+</details>
+
+<details> 
+ <summary><b>Práctica 12 - Teclado Matricial y Calculadora Básica </b></summary>
+
+### Descripción
+
+En esta práctica se implementaron dos aplicaciones utilizando el microcontrolador PIC16F887, una pantalla LCD y un teclado matricial 4x4. En la primera actividad se desarrolló un sistema que muestra en la LCD los caracteres presionados en el teclado matricial. Posteriormente, se implementó una calculadora básica capaz de realizar operaciones de suma, resta, multiplicación y división entre dos números ingresados.
+
+
+| Cantidad | Componente |
+|-----------|------------|
+| 1 | Pantalla LCD | 
+| 1 | Teclado matricial 4x4 |
+| 1 | Resistencia de 1 kΩ |
+| 1 | PIC16F887 |
+| 1 | Push Button |
+| 1 | Cristal de cuarzo de 8 MHz |
+| 1 | Fuente de alimentación de 5 V |
+
+
+---
+
+## Actividad 1: Visualización de Caracteres del Teclado Matricial
+
+En esta primera actividad se configuró el teclado matricial para detectar la pulsación de teclas. Cada carácter ingresado por el usuario se muestra en la pantalla LCD, permitiendo verificar la lectura del teclado.
+
+### Simulación
+
+Antes de realizar la implementación física, se utilizó Proteus para comprobar la detección de las teclas y su visualización en la pantalla LCD.
+
+#### Simulación en Proteus
+
+![Esquematico](./Practica12/sim.png)
+
+**Archivo de simulación:** 
+[Descargar simulación](./Practica12/base_micro.pdsprj)
+
+### Programación
+
+La programación del PIC16F887 se realizó utilizando MPLAB, encargado de la tecla presionada y mostrar el carácter correspondiente en la LCD.
+
+**Código en MPLAB:** 
+[Ver código](./Practica12/Escribe.hex)
+
+
+### Resultado
+
+Después de cargar el programa en el microcontrolador y realizar las conexiones correspondientes, se logró visualizar cada carácter ingresado.
+
+#### Resultado físico
+
+![Circuito final](./Practica12/sim0.gif)
+
+## Actividad 2: Calculadora Básica
+
+En esta la segunda actividad se desarrolló una calculadora que permite ingresar dos números mediante el teclado matricial y seleccionar una operación matemática básica. 
+
+El sistema realiza:
+- Suma (+)
+- Resta (-)
+- Multiplicación (*)
+- División (/)
+
+Una vez ingresados los datos, el resultado de la operación se muestra en la pantalla LCD.
+
+### Simulación
+
+Antes de realizar la implementación física, se utilizó Proteus para mostrar las operaciones y la visualización de resultados
+
+#### Simulación en Proteus
+
+![Esquematico](./Practica12/sim.png)
+
+**Archivo de simulación:** 
+[Descargar simulación](./Practica12/base_micro.pdsprj)
+
+### Programación
+
+La programación del PIC16F887 se realizó utilizando MPLAB, encargado de capturar los números ingresados desde el teclado matricial, ejecutar la operación seleccionada y mostrar el resultado correspondiente en la LCD.
+
+**Código en MPLAB:** 
+[Ver código](./Practica12/Calculadora.hex)
+
+
+### Resultado
+
+Después de cargar el programa en el microcontrolador y realizar las conexiones correspondientes, se logró una calculadora funcional.
+
+#### Resultado físico
+
+![Circuito final](./Practica12/sim1.gif)
+![Circuito final](./Practica12/sim2.gif)
+
+</details>
+
+
+<details> 
+ <summary><b>Práctica 13 - Control de Velocidad y Sentido de Giro de un Motor DC</b></summary>
+
+### Descripción
+
+En esta práctica se implementaron dos aplicaciones utilizando el microcontrolador PIC16F887 para controlar un motor de corriente directa (DC). En la primera actividad se controló la velocidad del motor mediante un circuito driver basado en un transistor BJT y una señal PWM. Posteriormente, en la segunda actividad se utilizó un Puente H para controlar tanto la velocidad como el sentido de giro del motor.
+
+
+| Cantidad | Componente |
+|-----------|------------|
+| 1 | Motor DC | 
+| 1 | Potenciómetro |
+| 1 | Resistencia de 1 kΩ | 
+| 1 | PIC16F887 |
+| 1 | Push Button |
+| 1 | Transistor 2N2222A |
+| 1 | Puente H |
+| 1 | Cristal de cuarzo de 8 MHz |
+| 1 | Fuente de alimentación de 5 V |
+
+
+---
+
+## Actividad 1: Control de Velocidad mediante Driver BJT
+
+En esta primera actividad se utilizó un transistor 2N2222A como driver para controlar ka velocidad del motor se ajusta mediante un potenciómetro, cuya lectura es procesada por el microcontrolador para modificar Duty Cycle de una señal PWM.
+
+### Simulación
+
+Antes de realizar la implementación física, se utilizó Proteus para comprobar el control de la velocidad del motor conforme se variaba la posición del potenciómetro.
+
+#### Simulación en Proteus
+
+![Esquematico](./Practica13/Simulacion_a.png)
+
+**Archivo de simulación:** 
+[Descargar simulación](./Practica13/base_micro.pdsprj)
+
+### Programación
+
+La programación del PIC16F887 se realizó utilizando MPLAB, encargado de ajustar automáticamente el Duty Cycle en función del valor leído desde el potenciómetro.
+
+**Código en MPLAB:** 
+[Ver código](./Practica13/Velocidad.hex)
+
+
+### Resultado
+
+Después de cargar el programa en el microcontrolador y realizar las conexiones correspondientes, se logró visualizar un control de la velocidad del motor.
+
+#### Resultado físico
+
+![Circuito final](./Practica13/vel.gif)
+
+## Actividad 2: Control de Giro y Velocidad mediante Puente H
+
+En esta segunda actividad se empleó un Puente H para controlar el motor DC. Además de variar la velocidad mediante PWM, para asi invertir el sentido de giro del motor utilizando un botón de control. 
+
+
+### Simulación
+
+Antes de realizar la implementación física, se utilizó Proteus para observar tanto el cambio de velocidad como la inversión del sentido de giro del motor.
+
+#### Simulación en Proteus
+
+![Esquematico](./Practica12/Simulacion_b.png)
+
+**Archivo de simulación:** 
+[Descargar simulación](./Practica13/base_micro.pdsprj)
+
+### Programación
+
+La programación se realizó en MPLAB implementando la lógica necesaria para generar la señal PWM y controlar las entradas del Puente H.
+
+**Código en MPLAB:** 
+[Ver código](./Practica13/Sentido.hex)
+
+
+### Resultado
+
+Una vez cargado el programa y realizadas las conexiones correspondientes, se logró controlar correctamente la velocidad y el sentido de giro del motor DC mediante el Puente H.
+
+#### Resultado físico
+
+![Circuito final](./Practica13/pos.gif)
+
 
 </details>
 
