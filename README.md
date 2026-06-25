@@ -1154,6 +1154,67 @@ Después de cargar los programas en cada microcontrolador y realizar las conexio
 
 </details>
 
+<details> 
+ <summary><b>Proyecto Final - Juego del Dinosaurio en LCD</b></summary>
+
+### Descripción
+
+En este proyecto final se desarrolló un videojuego inspirado en el clásico **Dinosaurio de Google**, utilizando el microcontrolador PIC16F887 y una pantalla LCD. El jugador controla un dinosaurio que debe saltar los cactus para evitar colisiones; contando con un contador de vidas mediante LEDs, efectos sonoros con un buzzer y una pantalla de *Game Over* al perder todas las vidas.
+
+
+| Cantidad | Componente |
+|-----------|------------|
+| 1 | Pantalla LCD |
+| 1 | Buzzer |
+| 3 | LEDs |
+| 1 | Resistencia de 1 kΩ | 
+| 1 | PIC16F887 |
+| 1 | Push Button |
+| 1 | Servomotor |
+| 1 | Cristal de cuarzo de 8 MHz |
+| 1 | Fuente de alimentación de 5 V |
+
+---
+
+## Desarrollo del Videojuego
+
+El proyecto consiste en controlar un dinosaurio representado mediante un carácter personalizado en la pantalla LCD. 
+
+El objetivo del juego es evitar que el personaje choque con los cactus que aparecen en la pantalla. 
+El sistema implementa las siguientes funciones: 
+- Salto del dinosaurio mediante un botón.
+- Detección de colisiones entre el dinosaurio y el cactus.
+- Tres vidas representadas mediante tres LEDs.
+- Al perder una vida, se apaga uno de los LEDs y el buzzer emite un sonido de advertencia.
+- Cuando las tres vidas se agotan, el juego muestra la pantalla de *Game Over*.
+
+### Simulación
+
+Antes de realizar la implementación física, se utilizó Proteus para validar el movimiento del dinosaurio, la detección de colisiones, el funcionamiento de los LEDs y el buzzer.
+
+#### Simulación en Proteus
+
+![Esquematico](./Proyecto2/Simulacion.png)
+
+**Archivo de simulación:** 
+[Descargar simulación](./Proyecto2/proyecto.pdsprj)
+
+### Programación
+
+La programación del PIC16F887 se realizó utilizando MPLAB, encargado de realizar las funciones necesarias para el correcto funcionamiento del juego.
+
+**Código en MPLAB:** 
+[Ver código](./Practica14/Dinosaurio.hex)
+
+### Resultado
+
+Después de cargar el programa en el microcontrolador y realizar las conexiones correspondientes, se logró un videojuego completamente funcional en el que el usuario debe esquivar los obstáculos para conservar sus vidas.
+
+#### Resultado físico
+
+![Circuito final](./Proyecto2/juego.gif)
+
+
 #### Firma de Honor:
 
 Damos nuestra palabra de que hemos realizado esta actividad con integridad académica
