@@ -1214,6 +1214,7 @@ Después de cargar el programa en el microcontrolador y realizar las conexiones 
 
 ![Circuito final](./Proyecto2/juego.gif)
 
+</details>
 
 #### Firma de Honor:
 
