@@ -998,7 +998,7 @@ Antes de realizar la implementación física, se utilizó Proteus para observar 
 
 #### Simulación en Proteus
 
-![Esquematico](./Practica12/Simulacion_b.png)
+![Esquematico](./Practica13/Simulacion_b.png)
 
 **Archivo de simulación:** 
 [Descargar simulación](./Practica13/base_micro.pdsprj)
@@ -1021,7 +1021,7 @@ Una vez cargado el programa y realizadas las conexiones correspondientes, se log
 </details>
 
 <details> 
- <summary><b>Práctica 14 - Servomotor</b></summary>
+ <summary><b>Práctica 14 - Control de Servomotor</b></summary>
 
 ### Descripción
 
@@ -1068,7 +1068,7 @@ Después de cargar el programa en el microcontrolador y realizar las conexiones 
 
 #### Resultado físico
 
-![Circuito final](./Practica14/servo1.gif)
+![Circuito final](./Practica14/servo.gif)
 
 ## Actividad 2: Control de posición angular
 
@@ -1080,10 +1080,10 @@ Antes de realizar la implementación física, se utilizó Proteus para observar 
 
 #### Simulación en Proteus
 
-![Esquematico](./Practica12/Simulacion_b.png)
+![Esquematico](./Practica14/Simulacion_b.png)
 
 **Archivo de simulación:** 
-[Descargar simulación](./Practica13/base_micro.pdsprj)
+[Descargar simulación](./Practica14/base_micro.pdsprj)
 
 ### Programación
 
@@ -1103,7 +1103,7 @@ Una vez cargado el programa y realizadas las conexiones correspondientes, se log
 </details>
 
 <details> 
- <summary><b>Práctica 15 - Comunicación</b></summary>
+ <summary><b>Práctica 15 - Comunicación entre PIC16F887</b></summary>
 
 ### Descripción
 
