@@ -84,7 +84,6 @@ void main(void){
             LCD_putrs("Hola mundo!");
             LCD_Set_Cursor(1, 0);
             LCD_putc(0);     // Mostrar la carita
-            __delay_ms(300);
         }else{
             LCD_putrs("Adios mundo!");
             LCD_Set_Cursor(1, 0);

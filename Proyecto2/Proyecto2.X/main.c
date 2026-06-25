@@ -1,41 +1,44 @@
 #include <xc.h>
 #include <stdint.h>
 #include <stdbool.h>
+#include <stdio.h>
+#include <stdlib.h>
 #include "lcd.h"
 
 #define _XTAL_FREQ 8000000
 
-#pragma config FOSC = HS
-#pragma config WDTE = OFF
-#pragma config LVP = OFF
+#pragma config FOSC = XT        // Oscillator Selection bits (XT oscillator)
+#pragma config WDTE = OFF       // Watchdog Timer Enable bit (WDT disabled)
+#pragma config PWRTE = OFF      // Power-up Timer Enable bit (PWRT disabled)
+#pragma config BOREN = ON       // Brown-out Reset Enable bit (enabled)
+#pragma config LVP = OFF        // Low-Voltage Programming Enable bit (disabled)
+#pragma config CPD = OFF        // Data EEPROM Memory Code Protection (disabled)
+#pragma config WRT = OFF        // Flash Program Memory Write Enable (disabled)
+#pragma config CP = OFF         // Flash Program Memory Code Protection (disabled)
 
-#define BOTON PORTBbits.RB0
 #define BUZZER PORTDbits.RD3
-
-#define LED1 PORTDbits.RD0
-#define LED2 PORTDbits.RD1
-#define LED3 PORTDbits.RD2
-
-LCD lcd;
+#define BOTON PORTBbits.RB0
 
 // Variables del juego
-uint8_t dino_row = 1;       // 0 = arriba, 1 = suelo
-uint8_t cactus = 15;
-uint8_t vidas = 3;
+uint8_t dino_row = 1, cactus = 15, vidas = 3, puntos=0;
 
 // Control de salto no bloqueante
-uint8_t salto = 0;          // 0 = en suelo, 1 = en el aire
-uint8_t timer_salto = 0;
+uint8_t salto = 0, timer_salto = 0;
 
 // Patrones de caracteres personalizados en HEXADECIMAL (seguro)
-const uint8_t dino_pattern[8] = {
+const unsigned char dino_pattern[8] = {
     0x00, 0x07, 0x17, 0x1F,
     0x0E, 0x08, 0x0C, 0x00
 };
 
-const uint8_t cactus_pattern[8] = {
+const unsigned char cactus_pattern[8] = {
     0x04, 0x04, 0x15, 0x0E,
     0x04, 0x1F, 0x04, 0x04
+};
+
+const unsigned char muerte[8] = {
+    0xFF, 0xFF, 0xFF, 0xFF,
+    0xFF, 0xFF, 0xFF, 0xFF
 };
 
 // ================= BUZZER (pitido a 1kHz) =================
@@ -52,24 +55,18 @@ void beep(uint16_t ms)
 }
 
 // ================= LEDS =================
-void leds()
-{
-    LED1 = (vidas >= 1);
-    LED2 = (vidas >= 2);
-    LED3 = (vidas >= 3);
-}
 
 // ================= CARGA DE CARACTERES PERSONALIZADOS =================
-void LCD_CustomChar(uint8_t location, const uint8_t *pattern)
+void LCD_CreateChar(unsigned char pos, const unsigned char *pattern)
 {
-    if (location < 8)
+    LCD_Cmd(0x40 + (pos * 8));   // Ir a la CGRAM
+
+    for(unsigned char i = 0; i < 8; i++)
     {
-        LCD_Cmd(0x40 + (location * 8));   // Direccion de CGRAM
-        for (uint8_t i = 0; i < 8; i++)
-        {
-            LCD_putc(pattern[i]);         // Escribe el patron en CGRAM
-        }
+        LCD_putc(pattern[i]);    // Copiar los 8 bytes
     }
+
+    LCD_Cmd(0x80);               // Regresar a memoria normal
 }
 
 // ================= GAME =================
@@ -84,9 +81,12 @@ void update()
     // Colision: cactus en columna 2 y dinosaurio en el suelo
     if (cactus == 2 && dino_row == 1)
     {
+        LCD_Clear();
+        LCD_Set_Cursor(1, 2);
+        LCD_putc(2);
         beep(200);          // Sonido de muerte
-
         vidas--;
+        PORTD = PORTD >> 1;
         cactus = 15;
 
         if (vidas == 0)
@@ -94,43 +94,12 @@ void update()
             LCD_Clear();
             LCD_Set_Cursor(0, 1);
             LCD_putrs("   GAME OVER    ");
-
-            LED1 = 0;
-            LED2 = 0;
-            LED3 = 0;
             BUZZER = 0;
             while (1);
         }
+    }else if(cactus==1){
+        puntos++;
     }
-}
-
-// ================= DIBUJO =================
-void draw()
-{
-    char line1[17], line2[17];
-    uint8_t i;
-
-    // Linea 1 (aire)
-    for (i = 0; i < 16; i++) line1[i] = ' ';
-    line1[16] = '\0';
-    if (dino_row == 0) {
-        line1[2] = 1;               // Dinosaurio en el aire (columna 2)
-    }
-
-    // Linea 2 (suelo)
-    for (i = 0; i < 16; i++) line2[i] = ' ';
-    line2[16] = '\0';
-    if (dino_row == 1) {
-        line2[2] = 1;               // Dinosaurio en el suelo (columna 2)
-    }
-    if (cactus < 16) {
-        line2[cactus] = 2;          // Cactus (codigo 2) en su columna
-    }
-
-    LCD_Set_Cursor(0, 1);
-    LCD_puts(line1);
-    LCD_Set_Cursor(1, 1);
-    LCD_puts(line2);
 }
 
 // ================= MAIN =================
@@ -141,66 +110,71 @@ void main()
 
     TRISC = 0x00;
     TRISD = 0x00;
-    TRISBbits.TRISB0 = 1;
+    BOTON = 1;
 
-    PORTD = 0;
+    PORTD = 0b00000111;
     BUZZER = 0;
 
-    OPTION_REGbits.nRBPU = 0;
-
-    lcd.PORT = &PORTC;
-    lcd.RS = 2;
-    lcd.EN = 3;
-    lcd.D4 = 4;
-    lcd.D5 = 5;
-    lcd.D6 = 6;
-    lcd.D7 = 7;
-
+    OPTION_REG = OPTION_REG & 0b01111111;
+    INTEDG = 0;
+    INTF = 0;
+    INTE = 1;
+    GIE = 1;
+    
+    LCD lcd = {&PORTC, 2, 3, 4, 5, 6, 7};
     LCD_Init(lcd);
 
-    // Cargar caracteres personalizados (codigo 1 para dino, 2 para cactus)
-    LCD_CustomChar(1, dino_pattern);
-    LCD_CustomChar(2, cactus_pattern);
-
+    // Cargar caracteres personalizados (codigo 0 para dino, 1 para cactus)
+    LCD_CreateChar(0, dino_pattern);
+    LCD_CreateChar(1, cactus_pattern);
+    LCD_CreateChar(2, muerte);
+    char buffer[10];
     // Pantalla de inicio
     LCD_Clear();
     LCD_Set_Cursor(0, 1);
     LCD_putrs("  DINO GAME   ");
     LCD_Set_Cursor(1, 1);
     LCD_putrs("   START...   ");
-    __delay_ms(1500);
-
-    LCD_Clear();
+    __delay_ms(1000);
 
     while (1)
     {
         // --- Boton de salto ---
+        LCD_Clear();
+        LCD_Set_Cursor(0, 4);
+        LCD_putrs("Points:");
+        sprintf(buffer, "%u", puntos);
+        LCD_putrs(buffer);
+        if (dino_row == 0) {
+            LCD_Set_Cursor(0, 2);
+        }else {
+            LCD_Set_Cursor(1, 2);
+        }
+        LCD_putc(0);
+        LCD_Set_Cursor(1, cactus);
+        LCD_putc(1);
         if (BOTON == 0 && salto == 0)
         {
             __delay_ms(20);
             if (BOTON == 0)
             {
                 salto = 1;
-                timer_salto = 3;
-                while (BOTON == 0);
+                timer_salto = 2;
             }
         }
 
         // --- Actualizar salto ---
         if (salto == 1)
         {
+            timer_salto--;
             dino_row = 0;               // Subir
-            if (--timer_salto == 0)
+            if (timer_salto == 0)
             {
                 dino_row = 1;           // Bajar
                 salto = 0;
             }
         }
-
         update();
-        leds();
-        draw();
-
-        __delay_ms(150);
-    }
+        __delay_ms(100);
+        }
 }
