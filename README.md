@@ -721,8 +721,7 @@ Después de realizar las conexiones y cargar el programa, se obtuvo la lectura d
 
 ### Descripción
 
-En esta práctica se utilizó el microcontrolador PIC16F887 y una pantalla LCD.  
-En la primera actividad se implementó un timer, y posteriormente en la segunda actividad se integró la lectura de voltaje utilizando un potenciómetro, mostrando ambos valores en la LCD.
+En esta práctica se utilizó el microcontrolador PIC16F887 y una pantalla LCD. En la primera actividad se implementó un timer, y posteriormente en la segunda actividad se integró la lectura de voltaje utilizando un potenciómetro, mostrando ambos valores en la LCD.
 
 
 | Cantidad | Componente |
