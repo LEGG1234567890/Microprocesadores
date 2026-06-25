@@ -1068,7 +1068,7 @@ Después de cargar el programa en el microcontrolador y realizar las conexiones 
 
 #### Resultado físico
 
-![Circuito final](./Practica14/a.gif)
+![Circuito final](./Practica14/servo1.gif)
 
 ## Actividad 2: Control de posición angular
 
@@ -1098,7 +1098,7 @@ Una vez cargado el programa y realizadas las conexiones correspondientes, se log
 
 #### Resultado físico
 
-![Circuito final](./Practica14/b.gif)
+![Circuito final](./Practica14/servo2.gif)
 
 </details>
 
