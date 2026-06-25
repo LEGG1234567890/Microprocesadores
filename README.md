@@ -951,6 +951,94 @@ Después de cargar el programa en el microcontrolador y realizar las conexiones 
 </details>
 
 
+<details> 
+ <summary><b>Práctica 13 - Control de Velocidad y Sentido de Giro de un Motor DC</b></summary>
+
+### Descripción
+
+En esta práctica se implementaron dos aplicaciones utilizando el microcontrolador PIC16F887 para controlar un motor de corriente directa (DC). En la primera actividad se controló la velocidad del motor mediante un circuito driver basado en un transistor BJT y una señal PWM. Posteriormente, en la segunda actividad se utilizó un Puente H para controlar tanto la velocidad como el sentido de giro del motor.
+
+
+| Cantidad | Componente |
+|-----------|------------|
+| 1 | Motor DC | 
+| 1 | Potenciómetro |
+| 1 | Resistencia de 1 kΩ | 
+| 1 | PIC16F887 |
+| 1 | Push Button |
+| 1 | Transistor 2N2222A |
+| 1 | Puente H |
+| 1 | Cristal de cuarzo de 8 MHz |
+| 1 | Fuente de alimentación de 5 V |
+
+
+---
+
+## Actividad 1: Control de Velocidad mediante Driver BJT
+
+En esta primera actividad se utilizó un transistor 2N2222A como driver para controlar ka velocidad del motor se ajusta mediante un potenciómetro, cuya lectura es procesada por el microcontrolador para modificar Duty Cycle de una señal PWM.
+
+### Simulación
+
+Antes de realizar la implementación física, se utilizó Proteus para comprobar el control de la velocidad del motor conforme se variaba la posición del potenciómetro.
+
+#### Simulación en Proteus
+
+![Esquematico](./Practica13/Simulacion_a.png)
+
+**Archivo de simulación:** 
+[Descargar simulación](./Practica13/base_micro.pdsprj)
+
+### Programación
+
+La programación del PIC16F887 se realizó utilizando MPLAB, encargado de ajustar automáticamente el Duty Cycle en función del valor leído desde el potenciómetro.
+
+**Código en MPLAB:** 
+[Ver código](./Practica13/Velocidad.hex)
+
+
+### Resultado
+
+Después de cargar el programa en el microcontrolador y realizar las conexiones correspondientes, se logró visualizar un control de la velocidad del motor.
+
+#### Resultado físico
+
+![Circuito final](./Practica13/vel.gif)
+
+## Actividad 2: Control de Giro y Velocidad mediante Puente H
+
+En esta segunda actividad se empleó un Puente H para controlar el motor DC. Además de variar la velocidad mediante PWM, para asi invertir el sentido de giro del motor utilizando un botón de control. 
+
+
+### Simulación
+
+Antes de realizar la implementación física, se utilizó Proteus para observar tanto el cambio de velocidad como la inversión del sentido de giro del motor.
+
+#### Simulación en Proteus
+
+![Esquematico](./Practica12/Simulacion_b.png)
+
+**Archivo de simulación:** 
+[Descargar simulación](./Practica13/base_micro.pdsprj)
+
+### Programación
+
+La programación se realizó en MPLAB implementando la lógica necesaria para generar la señal PWM y controlar las entradas del Puente H.
+
+**Código en MPLAB:** 
+[Ver código](./Practica13/Sentido.hex)
+
+
+### Resultado
+
+Una vez cargado el programa y realizadas las conexiones correspondientes, se logró controlar correctamente la velocidad y el sentido de giro del motor DC mediante el Puente H.
+
+#### Resultado físico
+
+![Circuito final](./Practica13/pos.gif)
+
+
+</details>
 #### Firma de Honor:
 
 Damos nuestra palabra de que hemos realizado esta actividad con integridad académica
