@@ -801,10 +801,10 @@ Una vez cargado el programa y realizadas las conexiones correspondientes, se log
 
 ![Circuito final](./Practica10/b.gif)
 
-<details>
+</details>
  
- <details>
-<details> <summary><b>Práctica 11 - Control de Intensidad de LEDs mediante PWM por Hardware y Software </b></summary>
+<details>
+<summary><b>Práctica 11 - Control de Intensidad de LEDs mediante PWM por Hardware y Software </b></summary>
 
 ### Descripción
 
@@ -854,11 +854,10 @@ Después de realizar las conexiones y cargar el programa, se obtuvo control de l
 
 ![Circuito final](./Practica11/led.gif)
 
-<details>
-
 </details>
 
-<details> <summary><b>Práctica 12 - Teclado Matricial y Calculadora Básica </b></summary>
+<details> 
+ <summary><b>Práctica 12 - Teclado Matricial y Calculadora Básica </b></summary>
 
 ### Descripción
 
