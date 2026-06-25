@@ -803,6 +803,7 @@ Una vez cargado el programa y realizadas las conexiones correspondientes, se log
 
 <details>
  
+ <details>
 <details> <summary><b>Práctica 11 - Control de Intensidad de LEDs mediante PWM por Hardware y Software </b></summary>
 
 ### Descripción
