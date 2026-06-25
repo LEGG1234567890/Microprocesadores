@@ -7,7 +7,7 @@ Repositorio que contiene las prácticas y proyectos desarrollados durante el cur
 ## Contenido
 
 <details>
-<summary><b>Práctica 1 -  Contador de 6 Bits y Caminata de LEDs con PIC16F887</b></summary>
+<summary><b>Práctica 1 -  Contador de 6 Bits y Caminata de LEDs</b></summary>
  
 ## Práctica 1: Contador de 6 Bits y Caminata de LEDs 
 
@@ -95,7 +95,7 @@ Después de cargar el programa en el PIC16F887 y realizar las conexiones corresp
 </details>
 
 <details>
-<summary><b>Práctica 2 -Visualización de Letras en una Matriz de LEDs con PIC16F887</b></summary>
+<summary><b>Práctica 2 -Visualización de Letras en una Matriz de LEDs</b></summary>
 
 ## Práctica 2: Visualización de Letras en una Matriz de LEDs
 ### Descripción
@@ -182,7 +182,7 @@ Una vez cargado el programa en el PIC16F887 y realizadas las conexiones correspo
 </details>
 
 <details>
-<summary><b>Práctica 3 - Visualización de Números y Caracteres Hexadecimales en un Display de 7 Segmentos con PIC16F887</b></summary>
+<summary><b>Práctica 3 - Visualización de Números y Caracteres Hexadecimales en un Display de 7 Segmentos</b></summary>
 
 ## Práctica 3: Visualización de Números y Caracteres Hexadecimales en un Display de 7 Segmentos 
 
@@ -270,7 +270,7 @@ Una vez cargado el programa en el PIC16F887 y realizadas las conexiones correspo
 </details>
 
 <details>
-<summary><b>Práctica 4 -  Contador de 0 a 99 controlado con botones utilizando PIC16F887</b></summary>
+<summary><b>Práctica 4 -  Contador de 0 a 99 controlado con botones</b></summary>
 
 ## Práctica 4: Contador de 0 a 99 controlado con botones utilizando 
 
