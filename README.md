@@ -801,8 +801,6 @@ Una vez cargado el programa y realizadas las conexiones correspondientes, se log
 
 ![Circuito final](./Practica10/b.gif)
 
-</details>
-
 <details> <summary><b>Práctica 11 - Control de Intensidad de LEDs mediante PWM por Hardware y Software </b></summary>
 
 ### Descripción
@@ -853,7 +851,103 @@ Después de realizar las conexiones y cargar el programa, se obtuvo control de l
 
 ![Circuito final](./Practica11/led.gif)
 
+<details>
+
 </details>
+
+<details> <summary><b>Práctica 12 - Teclado Matricial y Calculadora Básica </b></summary>
+
+### Descripción
+
+En esta práctica se implementaron dos aplicaciones utilizando el microcontrolador PIC16F887, una pantalla LCD y un teclado matricial 4x4. En la primera actividad se desarrolló un sistema que muestra en la LCD los caracteres presionados en el teclado matricial. Posteriormente, se implementó una calculadora básica capaz de realizar operaciones de suma, resta, multiplicación y división entre dos números ingresados.
+
+
+| Cantidad | Componente |
+|-----------|------------|
+| 1 | Pantalla LCD | 
+| 1 | Teclado matricial 4x4 |
+| 1 | Resistencia de 1 kΩ |
+| 1 | PIC16F887 |
+| 1 | Push Button |
+| 1 | Cristal de cuarzo de 8 MHz |
+| 1 | Fuente de alimentación de 5 V |
+
+
+---
+
+## Actividad 1: Visualización de Caracteres del Teclado Matricial
+
+En esta primera actividad se configuró el teclado matricial para detectar la pulsación de teclas. Cada carácter ingresado por el usuario se muestra en la pantalla LCD, permitiendo verificar la lectura del teclado.
+
+### Simulación
+
+Antes de realizar la implementación física, se utilizó Proteus para comprobar la detección de las teclas y su visualización en la pantalla LCD.
+
+#### Simulación en Proteus
+
+![Esquematico](./Practica12/sim.png)
+
+**Archivo de simulación:** 
+[Descargar simulación](./Practica12/base_micro.pdsprj)
+
+### Programación
+
+La programación del PIC16F887 se realizó utilizando MPLAB, encargado de la tecla presionada y mostrar el carácter correspondiente en la LCD.
+
+**Código en MPLAB:** 
+[Ver código](./Practica12/Escribe.hex)
+
+
+### Resultado
+
+Después de cargar el programa en el microcontrolador y realizar las conexiones correspondientes, se logró visualizar cada carácter ingresado.
+
+#### Resultado físico
+
+![Circuito final](./Practica12/sim0.gif)
+
+## Actividad 2: Calculadora Básica
+
+En esta la segunda actividad se desarrolló una calculadora que permite ingresar dos números mediante el teclado matricial y seleccionar una operación matemática básica. 
+
+El sistema realiza:
+- Suma (+)
+- Resta (-)
+- Multiplicación (*)
+- División (/)
+
+Una vez ingresados los datos, el resultado de la operación se muestra en la pantalla LCD.
+
+### Simulación
+
+Antes de realizar la implementación física, se utilizó Proteus para mostrar las operaciones y la visualización de resultados
+
+#### Simulación en Proteus
+
+![Esquematico](./Practica12/sim.png)
+
+**Archivo de simulación:** 
+[Descargar simulación](./Practica12/base_micro.pdsprj)
+
+### Programación
+
+La programación del PIC16F887 se realizó utilizando MPLAB, encargado de capturar los números ingresados desde el teclado matricial, ejecutar la operación seleccionada y mostrar el resultado correspondiente en la LCD.
+
+**Código en MPLAB:** 
+[Ver código](./Practica12/Calculadora.hex)
+
+
+### Resultado
+
+Después de cargar el programa en el microcontrolador y realizar las conexiones correspondientes, se logró una calculadora funcional.
+
+#### Resultado físico
+
+![Circuito final](./Practica12/sim1.gif)
+![Circuito final](./Practica12/sim2.gif)
+
+</details>
+
 
 #### Firma de Honor:
 
